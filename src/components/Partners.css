@@ -1,0 +1,59 @@
+.partners{
+padding:110px 80px;
+background:#f8f9fb;
+text-align:center;
+overflow:hidden;
+}
+
+/* heading */
+
+.partners-title{
+font-size:40px;
+font-weight:700;
+margin-bottom:10px;
+}
+
+.partners-desc{
+max-width:700px;
+margin:0 auto 60px;
+color:#6b7280;
+font-size:17px;
+line-height:1.7;
+}
+
+/* slider */
+
+.logo-slider{
+overflow:hidden;
+position:relative;
+}
+
+/* track */
+
+.logo-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+/* logos */
+
+.logo img{
+height:60px;
+object-fit:contain;
+filter:grayscale(100%);
+opacity:0.7;
+transition:0.3s;
+}
+
+.logo img:hover{
+filter:grayscale(0%);
+opacity:1;
+}
+
+/* animation */
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* logo half repeat */
+
+}

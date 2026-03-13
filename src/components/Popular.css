@@ -1,0 +1,47 @@
+.popular{
+padding: 120px 60px;  /* ऊपर space ताकि hero से nicely start हो */
+    background-color: #f5f5f5;
+text-align:center;
+}
+
+.section-title{
+font-size:42px;
+font-weight:700;
+margin-bottom:60px;
+}
+
+.popular-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.popular-card{
+background:white;
+padding:40px 30px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.popular-card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+.icon{
+font-size:40px;
+color:#ff6600;
+margin-bottom:20px;
+}
+
+.popular-card h3{
+font-size:22px;
+margin-bottom:10px;
+}
+
+.popular-card p{
+color:#666;
+font-size:15px;
+line-height:1.6;
+}

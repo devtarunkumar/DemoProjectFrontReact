@@ -1,0 +1,82 @@
+.popular{
+padding:120px 80px;
+text-align:center;
+
+/* professional gradient background */
+
+background:linear-gradient(135deg,#f8f9fb,#eef2f7,#ffffff);
+
+position:relative;
+overflow:hidden;
+}
+.section-title{
+font-size:42px;
+font-weight:700;
+color:#111;
+margin-bottom:15px;
+}
+
+/* card */
+
+.popular-card{
+background:white;
+border-radius:14px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* image */
+
+.popular-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+/* info */
+
+.card-info{
+padding:20px;
+text-align:left;
+}
+
+.card-info h3{
+font-size:20px;
+margin-bottom:8px;
+}
+
+.card-info p{
+color:#666;
+font-size:14px;
+line-height:1.6;
+}
+.section-desc{
+max-width:720px;
+margin:0 auto 60px;
+color:#6b7280;
+font-size:17px;
+line-height:1.8;
+}
+.popular::before{
+content:"";
+position:absolute;
+width:400px;
+height:400px;
+background:rgba(255,102,0,0.15);
+border-radius:50%;
+top:-120px;
+left:-120px;
+filter:blur(120px);
+}
+
+.popular::after{
+content:"";
+position:absolute;
+width:400px;
+height:400px;
+background:rgba(0,123,255,0.15);
+border-radius:50%;
+bottom:-120px;
+right:-120px;
+filter:blur(120px);
+}
