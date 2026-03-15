@@ -1,10 +1,18 @@
+/* =====================
+   WHY SECTION
+===================== */
+
 .why{
 padding:120px 60px;
 background:linear-gradient(180deg,#ffffff,#f7f9fc);
-font-family:sans-serif;
+font-family:'Poppins',sans-serif;
+overflow:hidden;
 }
 
-/* container */
+
+/* =====================
+   CONTAINER
+===================== */
 
 .why-container{
 display:grid;
@@ -15,20 +23,26 @@ max-width:1200px;
 margin:auto;
 }
 
-/* image */
+
+/* =====================
+   IMAGE
+===================== */
 
 .why-image img{
 width:100%;
 border-radius:16px;
 box-shadow:0 20px 40px rgba(0,0,0,0.15);
-transition:0.4s;
+transition:transform 0.4s ease;
 }
 
 .why-image img:hover{
 transform:scale(1.03);
 }
 
-/* content */
+
+/* =====================
+   CONTENT
+===================== */
 
 .why-content h2{
 font-size:44px;
@@ -42,10 +56,13 @@ color:#666;
 line-height:1.8;
 font-size:17px;
 margin-bottom:35px;
-max-width:500px;
+max-width:520px;
 }
 
-/* points grid */
+
+/* =====================
+   POINTS GRID
+===================== */
 
 .why-points{
 display:grid;
@@ -53,50 +70,92 @@ grid-template-columns:1fr 1fr;
 gap:20px;
 }
 
-/* point card */
+
+/* =====================
+   POINT CARD
+===================== */
 
 .point{
 display:flex;
 align-items:center;
 gap:12px;
-background:white;
+background:#fff;
 padding:16px 18px;
 border-radius:10px;
 font-size:16px;
 box-shadow:0 6px 20px rgba(0,0,0,0.08);
-transition:0.3s;
+transition:all 0.3s ease;
 }
-
-/* hover effect */
 
 .point:hover{
 transform:translateY(-5px);
 box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
-/* icon */
 
-.icon{
+/* =====================
+   ICON
+===================== */
+
+.point .icon{
 color:#ff6a00;
 font-size:20px;
+flex-shrink:0;
 }
+
+
+/* =====================
+   TABLET RESPONSIVE
+===================== */
+
+@media (max-width:1024px){
+
+.why-container{
+gap:50px;
+}
+
+.why-content h2{
+font-size:36px;
+}
+
+}
+
+
+/* =====================
+   MOBILE RESPONSIVE
+===================== */
+
 @media (max-width:768px){
 
-.hero{
-padding:120px 20px;
-height:auto;
-}
-
-.hero h1{
-font-size:26px;
-}
-
-.hero p{
-font-size:16px;
-}
-
-section{
+.why{
 padding:80px 20px;
+}
+
+/* stack layout */
+.why-container{
+grid-template-columns:1fr;
+gap:40px;
+text-align:center;
+}
+
+/* text center */
+.why-content p{
+margin:auto auto 30px;
+}
+
+/* points single column */
+.why-points{
+grid-template-columns:1fr;
+}
+
+/* smaller heading */
+.why-content h2{
+font-size:28px;
+}
+
+.point{
+justify-content:center;
+text-align:left;
 }
 
 }

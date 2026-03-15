@@ -40,7 +40,7 @@ margin-bottom:35px;
 
 .typing-text{
 color:#ff7a18;
-border-right:3px solid white;
+border-right:2px solid white;
 padding-right:6px;
 margin-left:8px;
 animation:cursor 1s infinite;
@@ -120,22 +120,39 @@ background:#20b954;
 }
 @media (max-width:768px){
 
+/* Hero section */
 .hero{
-padding:120px 20px;
 height:auto;
+padding:120px 20px;
+
+/* Disable parallax on mobile */
+background-attachment:scroll;
 }
 
+/* Heading */
 .hero h1{
-font-size:26px;
+font-size:28px;
 line-height:1.3;
 }
 
+/* Paragraph */
 .hero p{
 font-size:15px;
+max-width:100%;
 }
 
-section{
-padding:80px 20px;
+/* Buttons stack */
+.hero-buttons{
+flex-direction:column;
+gap:15px;
+width:100%;
+max-width:260px;
+}
+
+/* Button full width */
+.btn-primary,
+.btn-secondary{
+width:100%;
 }
 
 }

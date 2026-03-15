@@ -74,21 +74,34 @@ margin-bottom:8px;
 }
 @media (max-width:768px){
 
-.hero{
-padding:120px 20px;
-height:auto;
-}
-
-.hero h1{
-font-size:26px;
-}
-
-.hero p{
-font-size:16px;
-}
-
-section{
+/* Disable parallax on mobile */
+.founder-stats{
+background-attachment:scroll;
 padding:80px 20px;
+}
+
+/* cards spacing */
+.stats-container{
+gap:25px;
+}
+
+/* stat card */
+.stat-card{
+padding:30px 20px;
+}
+
+/* numbers size */
+.stat-card h2{
+font-size:32px;
+}
+
+/* text size */
+.stat-card p{
+font-size:14px;
+}
+
+.stat-icon{
+font-size:32px;
 }
 
 }

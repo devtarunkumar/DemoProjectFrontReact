@@ -1,11 +1,19 @@
+/* =====================
+   TESTIMONIAL SECTION
+===================== */
+
 .testimonials{
 padding:120px 60px;
 background:linear-gradient(135deg,#f8f9fb,#eef2f7);
 text-align:center;
 position:relative;
+overflow:hidden;
 }
 
-/* heading */
+
+/* =====================
+   HEADING
+===================== */
 
 .test-title{
 font-size:42px;
@@ -22,25 +30,42 @@ font-size:17px;
 line-height:1.8;
 }
 
-/* card */
+
+/* =====================
+   CARD GRID
+===================== */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+max-width:1200px;
+margin:auto;
+}
+
+
+/* =====================
+   TESTIMONIAL CARD
+===================== */
 
 .testimonial-card{
-background:white;
+background:#fff;
 padding:40px 30px;
 border-radius:18px;
 box-shadow:0 15px 35px rgba(0,0,0,0.08);
-transition:0.4s;
+transition:all 0.4s ease;
 position:relative;
 }
-
-/* hover */
 
 .testimonial-card:hover{
 transform:translateY(-8px);
 box-shadow:0 20px 45px rgba(0,0,0,0.15);
 }
 
-/* client image */
+
+/* =====================
+   CLIENT IMAGE
+===================== */
 
 .testimonial-card img{
 width:85px;
@@ -51,7 +76,10 @@ margin-bottom:18px;
 border:4px solid #f1f1f1;
 }
 
-/* name */
+
+/* =====================
+   NAME
+===================== */
 
 .testimonial-card h3{
 font-size:19px;
@@ -60,7 +88,10 @@ margin-bottom:8px;
 color:#111;
 }
 
-/* review */
+
+/* =====================
+   REVIEW TEXT
+===================== */
 
 .testimonial-card p{
 color:#6b7280;
@@ -68,7 +99,10 @@ font-size:15px;
 line-height:1.7;
 }
 
-/* quote icon */
+
+/* =====================
+   QUOTE ICON
+===================== */
 
 .testimonial-card::before{
 content:"❝";
@@ -79,32 +113,51 @@ font-size:50px;
 color:#ff660020;
 font-weight:bold;
 }
+
+
+/* =====================
+   SWIPER BUTTONS (optional)
+===================== */
+
 .swiper-button-next,
 .swiper-button-prev{
 color:#ff6600;
+transition:0.3s;
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover{
 color:#ff4500;
 }
+
+
+/* =====================
+   MOBILE RESPONSIVE
+===================== */
+
+@media (max-width:1024px){
+.cards{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
 @media (max-width:768px){
 
-.hero{
-padding:120px 20px;
-height:auto;
-}
-
-.hero h1{
-font-size:26px;
-}
-
-.hero p{
-font-size:16px;
-}
-
-section{
+.testimonials{
 padding:80px 20px;
+}
+
+.test-title{
+font-size:28px;
+}
+
+.test-desc{
+font-size:15px;
+margin-bottom:40px;
+}
+
+.cards{
+grid-template-columns:1fr;
 }
 
 }

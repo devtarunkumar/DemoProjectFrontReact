@@ -1,9 +1,17 @@
+/* =====================
+   FOUNDER SECTION
+===================== */
+
 .founder{
 padding:140px 80px 100px;
 background:linear-gradient(180deg,#b0b7c5,#eef2f7);
+overflow:hidden;
 }
 
-/* container */
+
+/* =====================
+   CONTAINER
+===================== */
 
 .founder-container{
 display:grid;
@@ -14,7 +22,10 @@ max-width:1200px;
 margin:auto;
 }
 
-/* image */
+
+/* =====================
+   IMAGE
+===================== */
 
 .founder-img{
 position:relative;
@@ -24,14 +35,17 @@ position:relative;
 width:100%;
 border-radius:18px;
 box-shadow:0 20px 45px rgba(0,0,0,0.15);
-transition:0.4s ease;
+transition:transform 0.4s ease;
 }
 
 .founder-img img:hover{
 transform:scale(1.03);
 }
 
-/* content */
+
+/* =====================
+   CONTENT CARD
+===================== */
 
 .founder-content{
 background:white;
@@ -39,6 +53,9 @@ padding:40px;
 border-radius:18px;
 box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
+
+
+/* heading */
 
 .founder-content h2{
 font-size:42px;
@@ -54,6 +71,7 @@ margin-bottom:20px;
 font-weight:600;
 }
 
+
 /* text */
 
 .founder-content p{
@@ -63,37 +81,60 @@ margin-bottom:15px;
 font-size:16px;
 }
 
-/* responsive */
 
-@media(max-width:900px){
+/* =====================
+   TABLET RESPONSIVE
+===================== */
+
+@media(max-width:1024px){
+
+.founder{
+padding:110px 40px 80px;
+}
+
+.founder-content h2{
+font-size:34px;
+}
+
+.founder-container{
+gap:50px;
+}
+
+}
+
+
+/* =====================
+   MOBILE RESPONSIVE
+===================== */
+
+@media(max-width:768px){
+
+.founder{
+padding:80px 20px;
+}
 
 .founder-container{
 grid-template-columns:1fr;
 gap:40px;
+text-align:center;
 }
 
 .founder-content{
 padding:30px;
 }
 
-}
-@media (max-width:768px){
+/* heading resize */
 
-.hero{
-padding:120px 20px;
-height:auto;
-}
-
-.hero h1{
+.founder-content h2{
 font-size:26px;
 }
 
-.hero p{
-font-size:16px;
+.founder-content h3{
+font-size:18px;
 }
 
-section{
-padding:80px 20px;
+.founder-content p{
+font-size:15px;
 }
 
 }

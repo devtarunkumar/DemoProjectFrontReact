@@ -5,31 +5,30 @@ import "./ScrollTopButton.css";
 const ScrollTopButton = () => {
   const [visible, setVisible] = useState(false);
 
-  const toggleVisible = () => {
-    if (window.scrollY > 150) { // scroll distance trigger
-      setVisible(true);
-    } else {
-      setVisible(false);
-    }
-  };
+  useEffect(() => {
+    const toggleVisible = () => {
+      setVisible(window.scrollY > 150);
+    };
+
+    window.addEventListener("scroll", toggleVisible);
+
+    return () => {
+      window.removeEventListener("scroll", toggleVisible);
+    };
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // smooth scroll
+      behavior: "smooth",
     });
   };
 
-  useEffect(() => {
-    window.addEventListener("scroll", toggleVisible);
-    return () => window.removeEventListener("scroll", toggleVisible);
-  }, []);
-
   return (
     <button
-      className="scroll-top-btn"
+      className={`scroll-top-btn ${visible ? "show" : ""}`}
       onClick={scrollToTop}
-      style={{ display: visible ? "inline" : "none" }}
+      aria-label="Scroll to top"
     >
       <FaArrowUp />
     </button>

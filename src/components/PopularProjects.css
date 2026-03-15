@@ -1,19 +1,44 @@
+/* =========================
+   POPULAR SERVICES
+========================= */
+
 .popular{
 padding:120px 60px;
 text-align:center;
 
-/* professional gradient background */
+/* gradient background */
 
 background:linear-gradient(135deg,#f8f9fb,#eef2f7,#ffffff);
 
 position:relative;
 overflow:hidden;
 }
+
+/* title */
+
 .section-title{
 font-size:42px;
 font-weight:700;
 color:#111;
 margin-bottom:15px;
+}
+
+/* description */
+
+.section-desc{
+max-width:720px;
+margin:0 auto 60px;
+color:#6b7280;
+font-size:17px;
+line-height:1.8;
+}
+
+/* cards grid */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
 }
 
 /* card */
@@ -23,6 +48,12 @@ background:white;
 border-radius:14px;
 overflow:hidden;
 box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.popular-card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
 }
 
 /* image */
@@ -33,7 +64,7 @@ height:220px;
 object-fit:cover;
 }
 
-/* info */
+/* card info */
 
 .card-info{
 padding:20px;
@@ -50,13 +81,9 @@ color:#666;
 font-size:14px;
 line-height:1.6;
 }
-.section-desc{
-max-width:720px;
-margin:0 auto 60px;
-color:#6b7280;
-font-size:17px;
-line-height:1.8;
-}
+
+/* decorative blur circles */
+
 .popular::before{
 content:"";
 position:absolute;
@@ -80,23 +107,55 @@ bottom:-120px;
 right:-120px;
 filter:blur(120px);
 }
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width:992px){
+
+.cards{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
 @media (max-width:768px){
 
-.hero{
-padding:120px 20px;
-height:auto;
-}
-
-.hero h1{
-font-size:26px;
-}
-
-.hero p{
-font-size:16px;
-}
-
-section{
+.popular{
 padding:80px 20px;
+}
+
+/* title */
+
+.section-title{
+font-size:28px;
+}
+
+/* description */
+
+.section-desc{
+font-size:15px;
+margin-bottom:40px;
+}
+
+/* grid */
+
+.cards{
+grid-template-columns:1fr;
+gap:20px;
+}
+
+/* image */
+
+.popular-card img{
+height:200px;
 }
 
 }

@@ -1,8 +1,14 @@
+/* =====================
+   POPULAR SERVICES
+===================== */
+
 .popular{
-padding: 120px 60px;  /* ऊपर space ताकि hero से nicely start हो */
-    background-color: #f5f5f5;
+padding:120px 60px;
+background-color:#f5f5f5;
 text-align:center;
 }
+
+/* heading */
 
 .section-title{
 font-size:42px;
@@ -10,11 +16,15 @@ font-weight:700;
 margin-bottom:60px;
 }
 
+/* grid */
+
 .popular-container{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:30px;
 }
+
+/* cards */
 
 .popular-card{
 background:white;
@@ -29,39 +39,63 @@ transform:translateY(-10px);
 box-shadow:0 15px 35px rgba(0,0,0,0.15);
 }
 
+/* icon */
+
 .icon{
 font-size:40px;
 color:#ff6600;
 margin-bottom:20px;
 }
 
+/* title */
+
 .popular-card h3{
 font-size:22px;
 margin-bottom:10px;
 }
+
+/* text */
 
 .popular-card p{
 color:#666;
 font-size:15px;
 line-height:1.6;
 }
+
+
+/* =====================
+   MOBILE RESPONSIVE
+===================== */
+
 @media (max-width:768px){
 
-.hero{
-padding:120px 20px;
-height:auto;
-}
-
-.hero h1{
-font-size:26px;
-}
-
-.hero p{
-font-size:16px;
-}
-
-section{
+.popular{
 padding:80px 20px;
+}
+
+/* heading */
+
+.section-title{
+font-size:28px;
+margin-bottom:40px;
+}
+
+/* grid spacing */
+
+.popular-container{
+gap:20px;
+}
+
+/* cards */
+
+.popular-card{
+padding:30px 20px;
+}
+
+/* icon */
+
+.icon{
+font-size:32px;
 }
 
 }
