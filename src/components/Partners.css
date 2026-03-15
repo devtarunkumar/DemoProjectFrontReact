@@ -1,5 +1,5 @@
 .partners{
-padding:110px 80px;
+padding:120px 60px;
 background:#f8f9fb;
 text-align:center;
 overflow:hidden;
@@ -55,5 +55,25 @@ opacity:1;
 @keyframes scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); } /* logo half repeat */
+
+}
+@media (max-width:768px){
+
+.hero{
+padding:120px 20px;
+height:auto;
+}
+
+.hero h1{
+font-size:26px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+section{
+padding:80px 20px;
+}
 
 }

@@ -1,5 +1,5 @@
 .founder-stats{
-padding:120px 80px;
+padding:120px 60px;
 
 /* background image */
 background-image:url("https://thumbs.dreamstime.com/b/professional-man-contemplating-success-achievement-motivational-words-concepts-digital-background-office-406625820.jpg");
@@ -71,4 +71,24 @@ margin-bottom:15px;
 .stat-card h2{
 font-size:46px;
 margin-bottom:8px;
+}
+@media (max-width:768px){
+
+.hero{
+padding:120px 20px;
+height:auto;
+}
+
+.hero h1{
+font-size:26px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+section{
+padding:80px 20px;
+}
+
 }

@@ -35,7 +35,7 @@ margin-bottom:10px;
 /* ABOUT */
 
 .about-company{
-padding:120px 80px;
+padding:120px 60px;
 background:#f8f9fb;
 }
 
@@ -87,4 +87,24 @@ transition:0.3s;
 .mission-box:hover,
 .vision-box:hover{
 transform:translateY(-8px);
+}
+@media (max-width:768px){
+
+.hero{
+padding:120px 20px;
+height:auto;
+}
+
+.hero h1{
+font-size:26px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+section{
+padding:80px 20px;
+}
+
 }

@@ -1,5 +1,5 @@
 .why{
-padding:120px 80px;
+padding:120px 60px;
 background:linear-gradient(180deg,#ffffff,#f7f9fc);
 font-family:sans-serif;
 }
@@ -79,4 +79,24 @@ box-shadow:0 10px 25px rgba(0,0,0,0.15);
 .icon{
 color:#ff6a00;
 font-size:20px;
+}
+@media (max-width:768px){
+
+.hero{
+padding:120px 20px;
+height:auto;
+}
+
+.hero h1{
+font-size:26px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+section{
+padding:80px 20px;
+}
+
 }

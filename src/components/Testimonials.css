@@ -1,5 +1,5 @@
 .testimonials{
-padding:120px 80px;
+padding:120px 60px;
 background:linear-gradient(135deg,#f8f9fb,#eef2f7);
 text-align:center;
 position:relative;
@@ -87,4 +87,24 @@ color:#ff6600;
 .swiper-button-next:hover,
 .swiper-button-prev:hover{
 color:#ff4500;
+}
+@media (max-width:768px){
+
+.hero{
+padding:120px 20px;
+height:auto;
+}
+
+.hero h1{
+font-size:26px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+section{
+padding:80px 20px;
+}
+
 }

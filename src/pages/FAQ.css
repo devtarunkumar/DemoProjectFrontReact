@@ -34,7 +34,7 @@
 /* FAQ */
 
 .faq-section {
-    padding: 120px 80px;
+    padding: 120px 60px;
     background: #f8f9fb;
 }
 
@@ -100,4 +100,24 @@
     background: #ff4500;
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+@media (max-width:768px){
+
+.hero{
+padding:120px 20px;
+height:auto;
+}
+
+.hero h1{
+font-size:26px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+section{
+padding:80px 20px;
+}
+
 }

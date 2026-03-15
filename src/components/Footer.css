@@ -96,3 +96,23 @@ padding-top:20px;
 color:#777;
 font-size:14px;
 }
+@media (max-width:768px){
+
+.hero{
+padding:120px 20px;
+height:auto;
+}
+
+.hero h1{
+font-size:26px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+section{
+padding:80px 20px;
+}
+
+}
