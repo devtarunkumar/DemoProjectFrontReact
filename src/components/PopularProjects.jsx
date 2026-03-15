@@ -38,21 +38,34 @@ desc:"SEO blog strategy"
 
 return (
 
-<section className="popular" data-aos="zoom-in">
+<section className="popular">
 
 <h2 className="section-title">Discover Popular Services</h2>
+
 <p className="section-desc">
 We provide result-driven digital marketing services that help businesses
 increase their online visibility, generate quality leads and grow faster
 in the digital world.
 </p>
+
 <Swiper
 modules={[Navigation, Autoplay]}
-spaceBetween={30}
-slidesPerView={3}
+spaceBetween={25}
 navigation
-autoplay={{ delay:2500 }}
 loop={true}
+autoplay={{ delay:2500 }}
+
+breakpoints={{
+0:{
+slidesPerView:1
+},
+640:{
+slidesPerView:2
+},
+1024:{
+slidesPerView:3
+}
+}}
 >
 
 {projects.map((item,index)=>(
@@ -60,7 +73,7 @@ loop={true}
 
 <div className="popular-card">
 
-<img src={item.img} alt="" />
+<img src={item.img} alt={item.title} />
 
 <div className="card-info">
 <h3>{item.title}</h3>

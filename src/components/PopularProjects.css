@@ -1,54 +1,41 @@
 /* =========================
-   POPULAR SERVICES
+POPULAR SECTION
 ========================= */
 
 .popular{
-padding:120px 60px;
+padding:100px 20px;
 text-align:center;
-
-/* gradient background */
-
 background:linear-gradient(135deg,#f8f9fb,#eef2f7,#ffffff);
-
-position:relative;
-overflow:hidden;
 }
 
 /* title */
 
 .section-title{
-font-size:42px;
+font-size:40px;
 font-weight:700;
-color:#111;
 margin-bottom:15px;
+color:#111;
 }
 
 /* description */
 
 .section-desc{
 max-width:720px;
-margin:0 auto 60px;
+margin:0 auto 50px;
 color:#6b7280;
-font-size:17px;
-line-height:1.8;
-}
-
-/* cards grid */
-
-.cards{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:25px;
+font-size:16px;
+line-height:1.7;
 }
 
 /* card */
 
 .popular-card{
-background:white;
+background:#fff;
 border-radius:14px;
 overflow:hidden;
 box-shadow:0 10px 25px rgba(0,0,0,0.1);
 transition:0.3s;
+height:100%;
 }
 
 .popular-card:hover{
@@ -60,11 +47,11 @@ box-shadow:0 15px 35px rgba(0,0,0,0.15);
 
 .popular-card img{
 width:100%;
-height:220px;
+height:200px;
 object-fit:cover;
 }
 
-/* card info */
+/* text */
 
 .card-info{
 padding:20px;
@@ -74,88 +61,48 @@ text-align:left;
 .card-info h3{
 font-size:20px;
 margin-bottom:8px;
+color:#111;
 }
 
 .card-info p{
-color:#666;
 font-size:14px;
+color:#666;
 line-height:1.6;
 }
 
-/* decorative blur circles */
-
-.popular::before{
-content:"";
-position:absolute;
-width:400px;
-height:400px;
-background:rgba(255,102,0,0.15);
-border-radius:50%;
-top:-120px;
-left:-120px;
-filter:blur(120px);
-}
-
-.popular::after{
-content:"";
-position:absolute;
-width:400px;
-height:400px;
-background:rgba(0,123,255,0.15);
-border-radius:50%;
-bottom:-120px;
-right:-120px;
-filter:blur(120px);
-}
-
-
 /* =========================
-   TABLET
+TABLET
 ========================= */
 
 @media (max-width:992px){
 
-.cards{
-grid-template-columns:repeat(2,1fr);
+.section-title{
+font-size:32px;
 }
 
 }
-
 
 /* =========================
-   MOBILE
+MOBILE
 ========================= */
 
 @media (max-width:768px){
 
 .popular{
-padding:80px 20px;
+padding:70px 15px;
 }
-
-/* title */
 
 .section-title{
-font-size:28px;
+font-size:26px;
 }
-
-/* description */
 
 .section-desc{
-font-size:15px;
-margin-bottom:40px;
+font-size:14px;
+margin-bottom:30px;
 }
-
-/* grid */
-
-.cards{
-grid-template-columns:1fr;
-gap:20px;
-}
-
-/* image */
 
 .popular-card img{
-height:200px;
+height:180px;
 }
 
 }

@@ -2,18 +2,23 @@
 background:#111;
 color:white;
 font-family:'Poppins',sans-serif;
-height: 400px;
-padding: 60px 20px;
+
+/* ❌ remove fixed height */
+padding:60px 20px 30px;
 }
 
+/* container */
+
 .footer-container{
+max-width:1200px;
+margin:auto;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:40px;
-margin-bottom:40px;
 }
 
 /* Logo & about */
+
 .footer-about .footer-logo{
 width:160px;
 margin-bottom:15px;
@@ -26,12 +31,12 @@ font-size:15px;
 }
 
 /* Links */
+
 .footer-links h3,
 .footer-services h3,
 .footer-contact h3{
 font-size:18px;
 margin-bottom:15px;
-color:white;
 }
 
 .footer-links ul,
@@ -40,40 +45,42 @@ list-style:none;
 padding:0;
 }
 
-.footer-links ul li,
-.footer-services ul li{
+.footer-links li,
+.footer-services li{
 margin-bottom:10px;
 }
 
-.footer-links ul li a,
-.footer-services ul li a{
+.footer-links a,
+.footer-services a{
 color:#bbb;
 text-decoration:none;
 transition:0.3s;
 }
 
-.footer-links ul li a:hover,
-.footer-services ul li a:hover{
+.footer-links a:hover,
+.footer-services a:hover{
 color:#ff6600;
 }
 
-/* Contact & social */
+/* Contact */
+
 .footer-contact p{
 color:#bbb;
 font-size:15px;
 margin-bottom:10px;
 }
 
-.footer-social {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
+/* Social icons */
+
+.footer-social{
+display:flex;
+gap:15px;
+margin-top:15px;
 }
 
 .footer-social a{
-width:35px;
-height:35px;
+width:36px;
+height:36px;
 background:#ff6600;
 color:white;
 display:flex;
@@ -89,25 +96,43 @@ background:#ff4500;
 transform:scale(1.1);
 }
 
-/* Bottom text */
+/* Bottom */
+
 .footer-bottom{
 text-align:center;
 border-top:1px solid rgba(255,255,255,0.2);
 padding-top:20px;
+margin-top:40px;
 color:#777;
 font-size:14px;
-margin-top: 40px;
 }
+
+/* =========================
+TABLET
+========================= */
+
+@media (max-width:992px){
+
+.footer-container{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* =========================
+MOBILE
+========================= */
+
 @media (max-width:768px){
 
 .footer{
-padding:50px 20px;
 text-align:center;
+padding:50px 20px 30px;
 }
 
 .footer-container{
 grid-template-columns:1fr;
-gap:30px;
+gap:35px;
 }
 
 .footer-about .footer-logo{
@@ -116,11 +141,6 @@ margin:auto;
 
 .footer-social{
 justify-content:center;
-}
-
-.footer-links ul,
-.footer-services ul{
-padding:0;
 }
 
 }
