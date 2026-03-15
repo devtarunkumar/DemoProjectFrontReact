@@ -23,7 +23,7 @@ name:"Amit Verma",
 review:"Professional team and excellent Google Ads campaigns."
 },
 {
-img:"https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg",
+img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgZ5gJMhtwA-EoaeN-chJnKVBMhG7EfkoTbA&s",
 name:"Neha Kapoor",
 review:"Highly recommend for website development and marketing."
 },
