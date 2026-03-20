@@ -40,12 +40,10 @@ return (
 
 <section className="popular">
 
-<h2 className="section-title">Discover Popular Services</h2>
+<h2 className="section-title">Discover Popular Properties</h2>
 
 <p className="section-desc">
-We provide result-driven digital marketing services that help businesses
-increase their online visibility, generate quality leads and grow faster
-in the digital world.
+We provide full service at every step.
 </p>
 
 <Swiper

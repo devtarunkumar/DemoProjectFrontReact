@@ -8,7 +8,7 @@
 
           {/* Logo & About */}
           <div className="footer-about">
-            <img src="/logo.png" alt="Stratviz Solution" className="footer-logo"/>
+            <img src="https://www.grownestrealty.in/images/grownest%20logo.jpg" alt="GrowNest Reality" className="footer-logo"/>
             <p>
               Stratviz Solution is a leading digital marketing agency
               helping businesses grow online with innovative strategies and results-driven campaigns.

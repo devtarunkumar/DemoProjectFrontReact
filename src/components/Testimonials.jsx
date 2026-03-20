@@ -7,88 +7,63 @@ import "swiper/css/navigation";
 import "./Testimonials.css";
 
 const testimonials = [
-{
-img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIxzUYvPll-_kvI1z_Px4jSWHR_0QRPWio1g&s",
-name:"Rohit Mehta",
-review:"Stratviz Solution helped our business grow with amazing SEO strategies."
-},
-{
-img:"https://www.shutterstock.com/image-photo/beauty-charisma-head-shot-portrait-600nw-2647728057.jpg",
-name:"Anjali Sharma",
-review:"Our social media engagement increased drastically after working with them."
-},
-{
-img:"https://static.vecteezy.com/system/resources/thumbnails/058/270/883/small/confident-young-man-posing-with-crossed-arms-in-casual-denim-shirt-png.png",
-name:"Amit Verma",
-review:"Professional team and excellent Google Ads campaigns."
-},
-{
-img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgZ5gJMhtwA-EoaeN-chJnKVBMhG7EfkoTbA&s",
-name:"Neha Kapoor",
-review:"Highly recommend for website development and marketing."
-},
-{
-img:"https://plus.unsplash.com/premium_photo-1689977927774-401b12d137d6",
-name:"Vikas Gupta",
-review:"Best digital marketing agency we have worked with."
-}
+  {
+    img: "/c1.jpeg",
+  },
+  {
+    img: "/c2.jpeg",
+  },
+  {
+    img: "/c3.jpeg",
+  },
+  {
+    img: "/c5.jpeg",
+  },
+  {
+    img: "/c6.jpeg",
+  },
+  {
+    img: "/c7.jpeg",
+  },
+  {
+    img: "/c8.jpeg",
+  },
+  {
+    img: "/c9.jpeg",
+  }
 ];
 
 const Testimonials = () => {
+  return (
+    <section className="testimonials">
 
-return(
+      <h2 className="test-title">Clients Testimonials</h2>
+        <p>We collect reviews from our customers.</p>
+      <Swiper
+        modules={[Navigation, Autoplay]}
+        spaceBetween={25}
+        navigation
+        loop={true}
+        autoplay={{ delay: 3000 }}
+        breakpoints={{
+          0: { slidesPerView: 1 },
+          640: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 }
+        }}
+      >
 
-<section className="testimonials">
+        {testimonials.map((item, index) => (
+          <SwiperSlide key={index}>
+            <div className="testimonial-card">
+              <img src={item.img} alt="gallery" />
+            </div>
+          </SwiperSlide>
+        ))}
 
-<h2 className="test-title">Client Testimonials</h2>
+      </Swiper>
 
-<p className="test-desc">
-See what our clients say about our digital marketing services
-and how we helped them grow their businesses.
-</p>
-
-<Swiper
-modules={[Navigation,Autoplay]}
-spaceBetween={25}
-navigation
-loop={true}
-autoplay={{delay:3000}}
-
-breakpoints={{
-0:{
-slidesPerView:1
-},
-640:{
-slidesPerView:2
-},
-1024:{
-slidesPerView:3
-}
-}}
->
-
-{testimonials.map((item,index)=>(
-<SwiperSlide key={index}>
-
-<div className="testimonial-card">
-
-<img src={item.img} alt={item.name}/>
-
-<h3>{item.name}</h3>
-
-<p>{item.review}</p>
-
-</div>
-
-</SwiperSlide>
-))}
-
-</Swiper>
-
-</section>
-
-)
-
-}
+    </section>
+  );
+};
 
 export default Testimonials;

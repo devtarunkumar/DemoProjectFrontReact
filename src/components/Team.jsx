@@ -2,26 +2,28 @@ import "./Team.css";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const team = [
+    {
+    img:"/public/t4.jpeg",
+name:"Miss. Neha", 
+role:"Manager"     
+    },
 {
-img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsna_CDm0N4g4fp-0-zi9LurGsH1ZyxUpDTw&s",
-name:"Rahul Sharma",
-role:"SEO Specialist"
+img:"/public/t1.jpeg",
+name:"Mr. Satish Kumar",
+role:"Sr.Sales Manager"
 },
 {
-img:"https://thumbs.dreamstime.com/b/profile-picture-smiling-indian-female-employee-profile-picture-smiling-millennial-indian-female-employee-posing-office-198022033.jpg",
-name:"Priya Verma",
-role:"Social Media Manager"
+
+img:"/public/t3.jpeg",
+name:"Mr. Shivam Pal",
+role:"Sales Executive"
 },
 {
-img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQbZtzGKyBiv3KoCTW3jBkrCJsvogEkFDBUg&s",
-name:"Aman Gupta",
-role:"Google Ads Expert"
-},
-{
-img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnTCvvYhk4EuUzhLdNErAUjqQ_7YlJlpYGkQ&s",
-name:"Sneha Kapoor",
-role:"Web Developer"
+img:"/public/t2.jpeg",
+name:"Mr. Vishnu Sharma",
+role:"Sr.Sales Executive"
 }
+
 ];
 
 const Team = () => {

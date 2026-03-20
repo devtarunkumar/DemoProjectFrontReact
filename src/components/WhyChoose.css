@@ -1,161 +1,102 @@
-/* =====================
-   WHY SECTION
-===================== */
+/* ===================== */
 
 .why{
-padding:120px 60px;
-background:linear-gradient(180deg,#ffffff,#f7f9fc);
-font-family:'Poppins',sans-serif;
-overflow:hidden;
+  padding:120px 60px;
+  background:#f7f9fc;
+  text-align:center;
 }
 
+/* heading */
 
-/* =====================
-   CONTAINER
-===================== */
+.why-title{
+  font-size:42px;
+  font-weight:700;
+  margin-bottom:10px;
+}
+
+.why-sub{
+  color:#666;
+  margin-bottom:60px;
+}
+
+/* GRID */
 
 .why-container{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:80px;
-align-items:center;
-max-width:1200px;
-margin:auto;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:30px;
+  max-width:1200px;
+  margin:auto;
+}
+
+/* CARD */
+
+.why-card{
+  background:white;
+  padding:35px 25px;
+  border-radius:14px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.why-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* ICON */
+
+.why-card .icon{
+  font-size:40px;
+  color:#D8B872;
+  margin-bottom:20px;
+}
+
+/* TITLE */
+
+.why-card h3{
+  font-size:20px;
+  margin-bottom:10px;
+}
+
+/* TEXT */
+
+.why-card p{
+  font-size:14px;
+  color:#666;
+  line-height:1.6;
 }
 
 
 /* =====================
-   IMAGE
+   TABLET
 ===================== */
 
-.why-image img{
-width:100%;
-border-radius:16px;
-box-shadow:0 20px 40px rgba(0,0,0,0.15);
-transition:transform 0.4s ease;
-}
-
-.why-image img:hover{
-transform:scale(1.03);
-}
-
-
-/* =====================
-   CONTENT
-===================== */
-
-.why-content h2{
-font-size:44px;
-font-weight:700;
-margin-bottom:20px;
-color:#111;
-}
-
-.why-content p{
-color:#666;
-line-height:1.8;
-font-size:17px;
-margin-bottom:35px;
-max-width:520px;
-}
-
-
-/* =====================
-   POINTS GRID
-===================== */
-
-.why-points{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:20px;
-}
-
-
-/* =====================
-   POINT CARD
-===================== */
-
-.point{
-display:flex;
-align-items:center;
-gap:12px;
-background:#fff;
-padding:16px 18px;
-border-radius:10px;
-font-size:16px;
-box-shadow:0 6px 20px rgba(0,0,0,0.08);
-transition:all 0.3s ease;
-}
-
-.point:hover{
-transform:translateY(-5px);
-box-shadow:0 10px 25px rgba(0,0,0,0.15);
-}
-
-
-/* =====================
-   ICON
-===================== */
-
-.point .icon{
-color:#ff6a00;
-font-size:20px;
-flex-shrink:0;
-}
-
-
-/* =====================
-   TABLET RESPONSIVE
-===================== */
-
-@media (max-width:1024px){
+@media (max-width:992px){
 
 .why-container{
-gap:50px;
-}
-
-.why-content h2{
-font-size:36px;
+  grid-template-columns:repeat(2,1fr);
 }
 
 }
 
 
 /* =====================
-   MOBILE RESPONSIVE
+   MOBILE
 ===================== */
 
-@media (max-width:768px){
+@media (max-width:600px){
 
 .why{
-padding:80px 20px;
+  padding:80px 20px;
 }
 
-/* stack layout */
+.why-title{
+  font-size:28px;
+}
+
 .why-container{
-grid-template-columns:1fr;
-gap:40px;
-text-align:center;
-}
-
-/* text center */
-.why-content p{
-margin:auto auto 30px;
-}
-
-/* points single column */
-.why-points{
-grid-template-columns:1fr;
-}
-
-/* smaller heading */
-.why-content h2{
-font-size:28px;
-}
-
-.point{
-justify-content:center;
-text-align:left;
+  grid-template-columns:1fr;
 }
 
 }

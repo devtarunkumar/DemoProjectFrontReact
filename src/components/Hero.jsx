@@ -8,11 +8,10 @@ import "./Hero.css";
 const Hero = () => {
 
     const words = [
-        "Digital Marketing",
-        "SEO Services",
-        "Social Media Marketing",
-        "Paid Advertising",
-        "Website Development"
+        "House ",
+        "Apartment ",
+        "Plaza ",
+       
     ];
 
     const [wordIndex, setWordIndex] = useState(0);
@@ -51,20 +50,18 @@ const Hero = () => {
         <div className="hero">
             {/* WhatsApp Icon */}
             <a
-                href="https://wa.me/917082429925"
+                href="https://wa.me/919911093426"
                 className="whatsapp-btn"
                 target="_blank"
             >
                 <FontAwesomeIcon icon={faWhatsapp} />
             </a>
             <h1 data-aos="zoom-in">
-                Grow Your Business with <span className="typing-text">{text}</span>
+                Find Your Dream <span className="typing-text">{text}</span>
             </h1>
 
             <p data-aos="fade-up" data-aos-delay="300">
-                Stratviz Solution helps businesses grow online with powerful
-                digital marketing strategies including SEO, social media marketing,
-                and paid advertising.
+                We Have Over Million Properties For You.
             </p>
 
         </div>

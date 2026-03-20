@@ -32,7 +32,7 @@ return(
 {/* Logo */}
 
 <div className="logo">
-<img src="/logo.png" alt="Stratviz Logo"/>
+<img src="/public/logo.png" alt="GrowNest Reality"/>
 </div>
 
 {/* Menu */}
@@ -67,9 +67,9 @@ return(
 {/* Phone button */}
 
 <div className="nav-btn">
-<a href="tel:+917082429925">
+<a href="tel:+919911093426">
 <button>
-<FontAwesomeIcon icon={faPhone}/> 70824-29925
+<FontAwesomeIcon icon={faPhone}/> 99110-93426
 </button>
 </a>
 </div>

@@ -1,37 +1,45 @@
 import "./Popular.css";
-import { FaSearch, FaBullhorn, FaChartLine, FaLaptopCode } from "react-icons/fa";
+
+const popularData = [
+  {
+    name: "Noida",
+    img: "https://www.sundreamgroup.com/wp-content/themes/Anthurium/assets/images/real-estate-properties.png"
+  },
+  {
+    name: "Greater Noida",
+    img: "https://www.gaurcity2.com/blogs/wp-content/uploads/2021/08/flats-2.png"
+  },
+  {
+    name: "Greater Noida West",
+    img: "https://www.prefeaconsultants.com/images/nirala-india/IMG_2978.jpeg"
+  }
+];
 
 const Popular = () => {
   return (
     <section className="popular" data-aos="fade-up">
 
-      <h2 className="section-title">Popular Services</h2>
+      <h2 className="section-title">Popular Places</h2>
+      <p>Properties In Most Popular Places.</p>
 
       <div className="popular-container">
 
-        <div className="popular-card">
-          <FaSearch className="icon"/>
-          <h3>SEO Optimization</h3>
-          <p>Improve your website ranking on Google and get more organic traffic.</p>
-        </div>
+        {popularData.map((item, index) => (
+          <div className="popular-card" key={index}>
 
-        <div className="popular-card">
-          <FaBullhorn className="icon"/>
-          <h3>Social Media Marketing</h3>
-          <p>Grow your brand presence on Instagram, Facebook and LinkedIn.</p>
-        </div>
+            {/* LEFT IMAGE */}
+            <div className="card-img">
+              <img src={item.img} alt={item.name} />
+            </div>
 
-        <div className="popular-card">
-          <FaChartLine className="icon"/>
-          <h3>Paid Advertising</h3>
-          <p>Run powerful Google Ads and Meta Ads campaigns to generate leads.</p>
-        </div>
+            {/* RIGHT TEXT */}
+            <div className="card-content">
+              <h3>{item.name}</h3>
+              
+            </div>
 
-        <div className="popular-card">
-          <FaLaptopCode className="icon"/>
-          <h3>Website Development</h3>
-          <p>Modern and responsive websites designed for high conversions.</p>
-        </div>
+          </div>
+        ))}
 
       </div>
 
