@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { FaWhatsapp } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Hero.css";
@@ -54,7 +53,7 @@ const Hero = () => {
                 className="whatsapp-btn"
                 target="_blank"
             >
-                <FontAwesomeIcon icon={faWhatsapp} />
+                <FaWhatsapp />
             </a>
             <h1 data-aos="zoom-in">
                 Find Your Dream <span className="typing-text">{text}</span>

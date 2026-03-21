@@ -38,7 +38,7 @@ const Testimonials = () => {
     <section className="testimonials">
 
       <h2 className="test-title">Clients Testimonials</h2>
-        <p>We collect reviews from our customers.</p>
+        <p></p>
       <Swiper
         modules={[Navigation, Autoplay]}
         spaceBetween={25}

@@ -6,83 +6,83 @@ import "./Navbar.css";
 
 const Navbar = () => {
 
-const [menuOpen,setMenuOpen] = useState(false);
-const [scrolled,setScrolled] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
 
-useEffect(()=>{
+    useEffect(() => {
 
-const handleScroll=()=>{
-if(window.scrollY>window.innerHeight/2){
-setScrolled(true)
-}else{
-setScrolled(false)
-}
-}
+        const handleScroll = () => {
+            if (window.scrollY > window.innerHeight / 2) {
+                setScrolled(true)
+            } else {
+                setScrolled(false)
+            }
+        }
 
-window.addEventListener("scroll",handleScroll)
+        window.addEventListener("scroll", handleScroll)
 
-return()=>window.removeEventListener("scroll",handleScroll)
+        return () => window.removeEventListener("scroll", handleScroll)
 
-},[])
+    }, [])
 
-return(
+    return (
 
-<div className={`navbar ${scrolled ? "scrolled":""}`}>
+        <div className={`navbar ${scrolled ? "scrolled" : ""}`}>
 
-{/* Logo */}
+            {/* Logo */}
 
-<div className="logo">
-<img src="/public/logo.png" alt="GrowNest Reality"/>
-</div>
+            <div className="logo">
+                <img src="/public/logo.png" alt="GrowNest Reality" />
+            </div>
 
-{/* Menu */}
+            {/* Menu */}
 
-<ul className={`nav-links ${menuOpen ? "active":""}`}>
+            <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
 
-<li><Link to="/">Home</Link></li>
+                <li><Link to="/">Home</Link></li>
 
-<li className="dropdown">
-<Link to="/about">About <FontAwesomeIcon icon={faChevronDown}/></Link>
-<ul className="dropdown-menu">
-<li><Link to="/founder">About Founder</Link></li>
-<li><Link to="/careers">Careers</Link></li>
-<li><Link to="/team">Our Team</Link></li>
-</ul>
-</li>
+                <li className="dropdown">
+                    <Link to="/about">About <FontAwesomeIcon icon={faChevronDown} /></Link>
+                    <ul className="dropdown-menu">
+                        <li><Link to="/founder">About Founder</Link></li>
+                        <li><Link to="/careers">Careers</Link></li>
+                        <li><Link to="/team">Our Team</Link></li>
+                    </ul>
+                </li>
 
-<li className="dropdown">
-<Link to="/projects">Projects <FontAwesomeIcon icon={faChevronDown}/></Link>
-<ul className="dropdown-menu">
-<li><Link to="/project1">Project 1</Link></li>
-<li><Link to="/project2">Project 2</Link></li>
-<li><Link to="/project3">Project 3</Link></li>
-</ul>
-</li>
+                <li className="dropdown">
+                    <Link to="/projects">Projects <FontAwesomeIcon icon={faChevronDown} /></Link>
+                    <ul className="dropdown-menu">
+                        <li><Link to="/project1">Project 1</Link></li>
+                        <li><Link to="/project2">Project 2</Link></li>
+                        <li><Link to="/project3">Project 3</Link></li>
+                    </ul>
+                </li>
 
-<li><Link to="/faq">FAQ</Link></li>
-<li><Link to="/contact">Contact</Link></li>
+                <li><Link to="/faq">FAQ</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
 
-</ul>
+            </ul>
 
-{/* Phone button */}
+            {/* Phone button */}
 
-<div className="nav-btn">
-<a href="tel:+919911093426">
-<button>
-<FontAwesomeIcon icon={faPhone}/> 99110-93426
-</button>
-</a>
-</div>
+            <div className="nav-btn">
+                <a href="tel:+919911093426">
+                    <button>
+                        <FontAwesomeIcon icon={faPhone} /> 99110-93426
+                    </button>
+                </a>
+            </div>
 
-{/* Hamburger */}
+            {/* Hamburger */}
 
-<div className="menu-icon" onClick={()=>setMenuOpen(!menuOpen)}>
-{menuOpen ? <FontAwesomeIcon icon={faTimes}/> : <FontAwesomeIcon icon={faBars}/>}
-</div>
+            <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
+                {menuOpen ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}
+            </div>
 
-</div>
+        </div>
 
-)
+    )
 
 }
 

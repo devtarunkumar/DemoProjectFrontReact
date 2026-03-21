@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ScrollTopButton from "../components/ScrollTopButton";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { FaWhatsapp } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import "./Contact.css";
@@ -104,11 +104,11 @@ loading="lazy"
 
 {/* WhatsApp Icon */}
             <a
-                href="https://wa.me/917082429925"
+                href="https://wa.me/919911093426"
                 className="whatsapp-btn"
                 target="_blank"
             >
-                <FontAwesomeIcon icon={faWhatsapp} />
+                <FaWhatsapp />
             </a>
 <ScrollTopButton/>
 

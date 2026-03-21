@@ -37,7 +37,6 @@ body{
   background:#FFFFFF1F;
   backdrop-filter:blur(10px);
   -webkit-backdrop-filter:blur(10px);
-
   position:absolute;
   top:0;
   width:100%;
@@ -61,7 +60,7 @@ body{
 }
 
 .navbar.scrolled .nav-links a{
-  color:#111;
+   color: #707070;
 }
 
 .navbar.scrolled .nav-links a:hover{

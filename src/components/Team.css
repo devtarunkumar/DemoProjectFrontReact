@@ -7,7 +7,9 @@ padding:120px 60px;
 background:linear-gradient(180deg,#f8f9fb,#eef2f7);
 text-align:center;
 }
-
+span{
+   color: #444444;
+}
 /* Heading */
 
 .team-title{
@@ -81,43 +83,6 @@ transform:scale(1.08);
 }
 
 
-/* =====================
-   SOCIAL ICONS
-===================== */
-
-.social-icons{
-position:absolute;
-bottom:-50px;
-left:50%;
-transform:translateX(-50%);
-display:flex;
-gap:10px;
-opacity:0;
-transition:all 0.4s ease;
-}
-
-.team-card:hover .social-icons{
-bottom:20px;
-opacity:1;
-}
-
-.social-icons a{
-background:#ff6600;
-color:#fff;
-width:35px;
-height:35px;
-display:flex;
-align-items:center;
-justify-content:center;
-border-radius:50%;
-font-size:14px;
-transition:all 0.3s ease;
-}
-
-.social-icons a:hover{
-background:#ff4501;
-transform:scale(1.1);
-}
 
 
 /* =====================
@@ -132,6 +97,9 @@ padding:22px;
 font-size:20px;
 margin-bottom:5px;
 color:#111;
+}
+.team-info h3:hover{
+   color: #666666;
 }
 
 .team-info p{

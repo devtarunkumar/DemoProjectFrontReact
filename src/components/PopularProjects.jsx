@@ -1,94 +1,145 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 
 import "swiper/css";
-import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 import "./PopularProjects.css";
 
 const PopularProjects = () => {
 
-const projects = [
-{
-img:"https://essinstitute.in/wp-content/uploads/2024/07/what-is-seo-1024x525.webp",
-title:"SEO Marketing",
-desc:"Improve Google ranking with SEO"
-},
-{
-img:"https://s44783.pcdn.co/in/wp-content/uploads/sites/3/2023/03/Social-Media-Advertising.jpg.optimal.jpg",
-title:"Social Media",
-desc:"Instagram & Facebook growth"
-},
-{
-img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNCpMGVQ7IN2Ku55y_GUgtAvv5m8G2mPWc5w&s",
-title:"Google Ads",
-desc:"High converting PPC campaigns"
-},
-{
-img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz82P7arPhimfuw4OK3-hgk3iVCpP787T8yA&s",
-title:"Website Development",
-desc:"Modern responsive websites"
-},
-{
-img:"https://www.stpaulsice.com/wp-content/uploads/2023/12/What-is-Content-Marketing.png",
-title:"Content Marketing",
-desc:"SEO blog strategy"
-}
-];
+    const projects = [
+        {
+            img: "/Eldeco Group4.jpg.jpeg",
+            title: "Eldeco Group",
+            location: "Sector 76, Noida"
+        },
+        {
+            img: "/Nirala Estate 2.jpg.jpeg",
+            title: "Nirala Estate",
+            location: "Sector 78, Noida"
+        },
+        {
+            img: "/SKA Orion4.webp",
+            title: "SKA Orion",
+            location: "GH-01A/2,Sector 143B, Noida"
+        },
+        {
+            img: "/Arihant 1.webp",
+            title: "Arihant Adobe",
+            location: "Sector 10,Noida Extension"
+        },
+        {
+            img: "/Fusion 1.jpg.jpeg",
+            title: "Fusion Rivulet",
+            location: "Sector 12,Noida Extension"
+        },
+        {
+            img: "/Mahagun 1.jpg.jpeg",
+            title: "Mahagun Mylagoon",
+            location: "Sector 12,Noida Extension"
+        },
+        {
+            img: "/Civitech-1.jpg.jpeg",
+            title: "Civitech",
+            location: "Sector 1, Noida Extension"
+        },
+        {
+            img: "/Godrej.jfif",
+            title: "Godrej Majesty",
+            location: "Sector 12,Noida Extension"
+        },
+        {
+            img: "/Aigin 2.jpg.jpeg",
+            title: "AIGN Royal",
+            location: "Sector 1,Greater Noida West"
+        },
+        {
+            img: "/Hawelia 1.jpg.jpeg",
+            title: "Hawelia",
+            location: "Sector 1,Greater Noida West"
+        }
+    ];
 
-return (
+    return (
 
-<section className="popular">
+        <section className="popular">
 
-<h2 className="section-title">Discover Popular Properties</h2>
+            <h2 className="section-title">Discover Popular Projects</h2>
+            <p className="section-desc">
+                We provide full service at every step.
+            </p>
 
-<p className="section-desc">
-We provide full service at every step.
-</p>
+            <Swiper
+                modules={[Autoplay, Pagination]}
+                spaceBetween={25}
+                pagination={{ clickable: true }}
 
-<Swiper
-modules={[Navigation, Autoplay]}
-spaceBetween={25}
-navigation
-loop={true}
-autoplay={{ delay:2500 }}
+                breakpoints={{
+                    0: { slidesPerView: 1 },
+                    576: { slidesPerView: 1.2 },
+                    768: { slidesPerView: 2 },
+                    1024: { slidesPerView: 3 },
+                    1280: { slidesPerView: 4 }
+                }}
+            >
 
-breakpoints={{
-0:{
-slidesPerView:1
-},
-640:{
-slidesPerView:2
-},
-1024:{
-slidesPerView:3
-}
-}}
->
+                {projects.map((item, index) => (
+                    <SwiperSlide key={index}>
 
-{projects.map((item,index)=>(
-<SwiperSlide key={index}>
+                        <div className="property-card">
 
-<div className="popular-card">
+                            {/* IMAGE */}
+                            <div className="card-img">
+                                <img src={item.img} alt={item.title} />
+                            </div>
 
-<img src={item.img} alt={item.title} />
+                            {/* CONTENT */}
+                            <div className="card-content">
 
-<div className="card-info">
-<h3>{item.title}</h3>
-<p>{item.desc}</p>
-</div>
+                                {/* TITLE */}
+                                <h3>{item.title}</h3>
 
-</div>
+                                {/* LOCATION */}
+                                <p className="location">📍 {item.location}</p>
 
-</SwiperSlide>
-))}
+                                {/* DETAILS */}
+                                <div className="details">
 
-</Swiper>
+                                    <div className="detail-item">
+                                        <span className="ic">🛏</span>
+                                        <span className="ic">6 Bedrooms</span>
+                                    </div>
 
-</section>
+                                    <div className="detail-item">
+                                        <span className="ic">🛁</span>
+                                        <span className="ic">3 Bathrooms</span>
+                                    </div>
 
-);
+                                    <div className="detail-item">
+                                        <span className="ic">📐</span>
+                                        <span className="ic">720 sq ft</span>
+                                    </div>
 
+                                    <div className="detail-item">
+                                        <span className="ic">🚗</span>
+                                        <span className="ic">2 Garages</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <br />
+                        <br />
+                    </SwiperSlide>
+                ))}
+
+            </Swiper>
+
+        </section>
+    );
 };
 
 export default PopularProjects;

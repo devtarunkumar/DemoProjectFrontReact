@@ -1,102 +1,158 @@
-/* ===================== */
+/* =====================
+   WHY SECTION
+===================== */
 
-.why{
-  padding:120px 60px;
-  background:#f7f9fc;
-  text-align:center;
+.why {
+   padding: 120px 60px;
+   background: #f7f9fc;
+   text-align: center;
 }
 
-/* heading */
+/* =====================
+   HEADING
+===================== */
 
-.why-title{
-  font-size:42px;
-  font-weight:700;
-  margin-bottom:10px;
+.why-title {
+   font-size: 42px;
+   font-weight: 700;
+   margin-bottom: 10px;
 }
 
-.why-sub{
-  color:#666;
-  margin-bottom:60px;
+.why-sub {
+   color: #666;
+   margin-bottom: 60px;
+   font-size: 16px;
 }
 
-/* GRID */
+/* =====================
+   GRID
+===================== */
 
-.why-container{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:30px;
-  max-width:1200px;
-  margin:auto;
+.why-container {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 30px;
+   max-width: 1200px;
+   margin: auto;
 }
 
-/* CARD */
-
-.why-card{
-  background:white;
-  padding:35px 25px;
-  border-radius:14px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.08);
-  transition:0.3s;
+.why-container:hover {
+   cursor: move;
 }
 
-.why-card:hover{
-  transform:translateY(-8px);
-  box-shadow:0 15px 35px rgba(0,0,0,0.15);
+/* =====================
+   CARD
+===================== */
+
+.why-card {
+   background: white;
+   padding: 35px 25px;
+   border-radius: 14px;
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+   transition: all 0.3s ease;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+   height: 100%;
+   /* ✅ equal height */
 }
 
-/* ICON */
-
-.why-card .icon{
-  font-size:40px;
-  color:#D8B872;
-  margin-bottom:20px;
+.why-card:hover {
+   transform: translateY(-8px);
+   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
-/* TITLE */
+/* =====================
+   IMAGE ICON (NEW)
+===================== */
 
-.why-card h3{
-  font-size:20px;
-  margin-bottom:10px;
+.icon-img {
+   width: 60px;
+   height: 60px;
+   object-fit: contain;
+   margin-bottom: 20px;
 }
 
-/* TEXT */
+/* =====================
+   TITLE
+===================== */
 
-.why-card p{
-  font-size:14px;
-  color:#666;
-  line-height:1.6;
+.why-card h3 {
+   font-size: 20px;
+   margin-bottom: 10px;
+   color: #111;
 }
 
+/* =====================
+   TEXT
+===================== */
+
+.why-card p {
+   font-size: 14px;
+   color: #666;
+   line-height: 1.6;
+}
+
+/* =====================
+   LARGE TABLET
+===================== */
+
+@media (max-width:1200px) {
+
+   .why-container {
+      grid-template-columns: repeat(3, 1fr);
+   }
+
+}
 
 /* =====================
    TABLET
 ===================== */
 
-@media (max-width:992px){
+@media (max-width:992px) {
 
-.why-container{
-  grid-template-columns:repeat(2,1fr);
+   .why {
+      padding: 100px 40px;
+   }
+
+   .why-container {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
 }
-
-}
-
 
 /* =====================
    MOBILE
 ===================== */
 
-@media (max-width:600px){
+@media (max-width:600px) {
 
-.why{
-  padding:80px 20px;
-}
+   .why {
+      padding: 70px 20px;
+   }
 
-.why-title{
-  font-size:28px;
-}
+   .why-title {
+      font-size: 26px;
+   }
 
-.why-container{
-  grid-template-columns:1fr;
-}
+   .why-sub {
+      font-size: 14px;
+      margin-bottom: 40px;
+   }
+
+   .why-container {
+      grid-template-columns: 1fr;
+      gap: 20px;
+   }
+
+   .why-card {
+      padding: 25px 20px;
+   }
+
+   .icon-img {
+      width: 50px;
+      height: 50px;
+   }
 
 }

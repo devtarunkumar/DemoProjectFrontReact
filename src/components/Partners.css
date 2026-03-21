@@ -40,9 +40,11 @@ position:relative;
 .logo-track{
 display:flex;
 width:max-content;
-animation:scroll 20s linear infinite;
+animation:scroll 80s linear infinite;
 }
-
+.logo-track:hover{
+   cursor: pointer;
+}
 
 /* LOGOS */
 

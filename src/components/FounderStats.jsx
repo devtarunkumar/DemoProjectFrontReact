@@ -11,82 +11,82 @@ const stats = [
 
 const FounderStats = () => {
 
-const [count,setCount] = useState(stats.map(()=>0));
-const sectionRef = useRef(null);
-const started = useRef(false);
+  const [count, setCount] = useState(stats.map(() => 0));
+  const sectionRef = useRef(null);
+  const started = useRef(false);
 
-useEffect(()=>{
+  useEffect(() => {
 
-const observer = new IntersectionObserver(
-(entries)=>{
-const entry = entries[0];
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
 
-if(entry.isIntersecting && !started.current){
+        if (entry.isIntersecting && !started.current) {
 
-started.current = true;
+          started.current = true;
 
-stats.forEach((item,index)=>{
+          stats.forEach((item, index) => {
 
-let start = 0;
-const end = item.number;
+            let start = 0;
+            const end = item.number;
 
-const interval = setInterval(()=>{
+            const interval = setInterval(() => {
 
-start += Math.ceil(end / 40);   // fast counter
+              start += Math.ceil(end / 40);   // fast counter
 
-if(start >= end){
-start = end;
-clearInterval(interval);
-}
+              if (start >= end) {
+                start = end;
+                clearInterval(interval);
+              }
 
-setCount(prev=>{
-const newCount=[...prev];
-newCount[index]=start;
-return newCount;
-});
+              setCount(prev => {
+                const newCount = [...prev];
+                newCount[index] = start;
+                return newCount;
+              });
 
-},30);
+            }, 30);
 
-});
+          });
 
-}
-},
-{ threshold:0.4 }
-);
+        }
+      },
+      { threshold: 0.4 }
+    );
 
-if(sectionRef.current){
-observer.observe(sectionRef.current);
-}
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
 
-},[]);
+  }, []);
 
-return(
+  return (
 
-<section className="founder-stats" ref={sectionRef}>
+    <section className="founder-stats" ref={sectionRef}>
 
-<div className="stats-container">
+      <div className="stats-container">
 
-{stats.map((item,index)=>(
+        {stats.map((item, index) => (
 
-<div className="stat-card" key={index}>
+          <div className="stat-card" key={index}>
 
-<div className="stat-icon">
-{item.icon}
-</div>
+            <div className="stat-icon">
+              {item.icon}
+            </div>
 
-<h2>{count[index]}+</h2>
+            <h2>{count[index]}+</h2>
 
-<p>{item.label}</p>
+            <p>{item.label}</p>
 
-</div>
+          </div>
 
-))}
+        ))}
 
-</div>
+      </div>
 
-</section>
+    </section>
 
-)
+  )
 
 }
 

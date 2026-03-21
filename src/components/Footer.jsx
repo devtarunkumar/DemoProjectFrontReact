@@ -1,67 +1,115 @@
-  import "./Footer.css";
-  import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import "./Footer.css";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
-  const Footer = () => {
-    return (
-      <footer className="footer" data-aos="fade-up">
-        <div className="footer-container">
+const Footer = () => {
+  return (
+    <footer className="footer" data-aos="fade-up">
+      <div className="footer-container">
 
-          {/* Logo & About */}
-          <div className="footer-about">
-            <img src="https://www.grownestrealty.in/images/grownest%20logo.jpg" alt="GrowNest Reality" className="footer-logo"/>
-            <p>
-              Stratviz Solution is a leading digital marketing agency
-              helping businesses grow online with innovative strategies and results-driven campaigns.
-            </p>
-          </div>
-
-          {/* Quick Links */}
-          <div className="footer-links">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-
-          {/* Services */}
-          <div className="footer-services">
-            <h3>Services</h3>
-            <ul>
-              <li><a href="#">SEO</a></li>
-              <li><a href="#">Social Media Marketing</a></li>
-              <li><a href="#">Paid Advertising</a></li>
-              <li><a href="#">Website Development</a></li>
-              <li><a href="#">Branding</a></li>
-            </ul>
-          </div>
-
-          {/* Contact & Social */}
+        {/* Logo & About */}
+        <div className="footer-about">
+          <img src="https://www.grownestrealty.in/images/grownest%20logo.jpg" alt="GrowNest Reality" className="footer-logo" />
+          <p>
+            Led by Manvendra Sharma, our CEO & Founder, GrowNest Realty has emerged as a trusted name in the Indian real estate market. With over a decade of experience, we are dedicated to making the real estate journey simpler, more transparent, and accessible for everyone.
+          </p> <br />
           <div className="footer-contact">
-            <h3>Contact Us</h3>
-            <p>Email: info@stratvizsolution.com</p>
-            <p>Phone: +91 70824-29925</p>
-            <p>Address: 123 Digital Street, Mumbai, India</p>
 
-            <div className="footer-social">
-              <h4>Follow us on:-</h4>
-              <a href="#"><FaFacebookF /></a>
-              <a href="#"><FaInstagram /></a>
-              <a href="#"><FaLinkedinIn /></a>
-              <a href="#"><FaTwitter /></a>
-            </div>
+            {/* Address */}
+            <p>
+              <FaMapMarkerAlt className="icon" />
+              <a
+                href="https://www.google.com/maps?q=Noida,India"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Noida, INDIA
+              </a>
+            </p>
+
+            {/* Email */}
+            <p>
+              <FaEnvelope className="icon" />
+              <a href="mailto:grownestrealty@gmail.com">
+                grownestrealty@gmail.com
+              </a>
+            </p>
+
+            {/* Phone */}
+            <p>
+              <FaPhoneAlt className="icon" />
+              <a href="tel:+919911093426">
+                +91 99110-93426
+              </a>
+            </p>
+
           </div>
 
+
         </div>
 
-        <div className="footer-bottom">
-          <p>© 2026 Stratviz Solution. All rights reserved.</p>
-        </div>
-      </footer>
-    );
-  };
 
-  export default Footer;
+        {/* Quick Links */}
+        <div className="footer-links">
+          <h3>Quick Links</h3> <br /> <br /> <br />
+          <ul>
+            <li><a href="#">Home</a></li> <br />
+            <li><a href="#">About</a></li> <br />
+            <li><a href="#">Projects</a></li> <br />
+            <li><a href="#">FAQ</a></li> <br />
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        {/* Services */}
+        <div className="footer-services">
+          <h3>Projects in Noida</h3> <br /> <br /> <br />
+          <ul>
+            <li><a href="#">Eldeco Group</a></li> <br />
+            <li><a href="#">Nirala Estate</a></li> <br />
+            <li><a href="#">SKA Orion</a></li>
+          </ul>
+        </div>
+        <div className="footer-services">
+          <h3>Projects in Greater Noida</h3> <br /> <br />
+          <ul>
+            <li><a href="#">Gaursons</a></li> <br />
+            <li><a href="#">Sobha</a></li>
+          </ul>
+        </div>
+        <div className="footer-services">
+          <h3>Projects in Greater Noida West</h3> <br /> <br />
+          <ul>
+            <li><a href="#">Goodrej Properties</a></li> <br />
+            <li><a href="#">Mahagun Mylagoon</a></li> <br />
+            <li><a href="#">Arihant Abode</a></li> <br />
+            <li><a href="#">Fusion Brook n Rivulet</a></li> <br />
+            <li><a href="#">AIGN Royal</a></li> <br />
+            <li><a href="#">Civitech Strings</a></li> <br />
+            <li><a href="#">Hawelia</a></li> <br />
+            <li><a href="#">Gaursons NBCC</a></li> <br />
+            <li><a href="#">VVIP</a></li>
+
+          </ul>
+        </div>
+
+      </div>
+
+      <div className="footer-bottom">
+
+        <p>2026 © Copyright GrowNest Realty - All Rights Reserved.</p>
+
+        <div className="footer-bottom-right">
+          <h4>Follow us on:-</h4>
+          <a href="#"><FaFacebookF /></a>
+          <a href="#"><FaInstagram /></a>
+          <a href="#"><FaLinkedinIn /></a>
+        </div>
+
+      </div>
+
+    </footer>
+  );
+};
+
+export default Footer;

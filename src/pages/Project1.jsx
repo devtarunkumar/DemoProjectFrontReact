@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ScrollTopButton from "../components/ScrollTopButton";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { FaWhatsapp } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaSwimmingPool, FaDumbbell, FaTree, FaShieldAlt } from "react-icons/fa";
 import "./Project1.css";
@@ -146,11 +146,11 @@ apartments, lush greenery and top class facilities.
 
 {/* WhatsApp Icon */}
             <a
-                href="https://wa.me/917082429925"
+                href="https://wa.me/919911093426"
                 className="whatsapp-btn"
                 target="_blank"
             >
-                <FontAwesomeIcon icon={faWhatsapp} />
+                <FaWhatsapp />
             </a>
 
 <ScrollTopButton/>

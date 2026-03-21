@@ -17,9 +17,11 @@ const popularData = [
 
 const Popular = () => {
   return (
-    <section className="popular" data-aos="fade-up">
+    <section className="popular">
 
-      <h2 className="section-title">Popular Places</h2>
+      <h2 className="section-title">
+        <span>Popular</span> Places
+      </h2>
       <p>Properties In Most Popular Places.</p>
 
       <div className="popular-container">
@@ -27,15 +29,14 @@ const Popular = () => {
         {popularData.map((item, index) => (
           <div className="popular-card" key={index}>
 
-            {/* LEFT IMAGE */}
+            {/* IMAGE */}
             <div className="card-img">
               <img src={item.img} alt={item.name} />
             </div>
 
-            {/* RIGHT TEXT */}
+            {/* TEXT */}
             <div className="card-content">
               <h3>{item.name}</h3>
-              
             </div>
 
           </div>
