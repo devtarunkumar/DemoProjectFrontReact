@@ -32,7 +32,7 @@ const Navbar = () => {
             {/* Logo */}
 
             <div className="logo">
-                <img src="/public/logo.png" alt="GrowNest Reality" />
+                <img src="/logo.png" alt="GrowNest Reality" />
             </div>
 
             {/* Menu */}

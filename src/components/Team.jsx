@@ -2,23 +2,23 @@ import "./Team.css";
 
 const team = [
     {
-        img: "/public/t4.jpeg",
+        img: "/t4.jpeg",
         name: "Miss. Neha",
         role: "Manager"
     },
     {
-        img: "/public/t1.jpeg",
+        img: "/t1.jpeg",
         name: "Mr. Satish Kumar",
         role: "Sr. Sales Manager"
     },
     {                                      
 
-        img: "/public/t2.jpeg",
+        img: "/t2.jpeg",
         name: "Mr. Vishnu Sharma",
         role: "Sr. Sales Executive"
     },
     {
-        img: "/public/t3.jpeg",
+        img: "/t3.jpeg",
         name: "Mr. Shivam Pal",
         role: "Sales Executive"
     }
