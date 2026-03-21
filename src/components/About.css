@@ -2,7 +2,6 @@
 
 .about-hero {
     height: 250px;
-    background-image: url("/bg-testimonials-2.jpg.jpeg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -120,7 +119,6 @@ span {
 }
 
 .stats-section {
-    background-image: url("/bg-details.jpg.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

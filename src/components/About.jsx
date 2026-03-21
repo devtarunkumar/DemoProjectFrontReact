@@ -78,7 +78,14 @@ const About = () => {
             <Navbar forceScrolled={true} />
 
             {/* HERO */}
-            <section className="about-hero">
+            <section className="about-hero"
+            
+            style={{
+        backgroundImage: `url(${process.env.PUBLIC_URL}/bg-testimonials-2.jpg.jpeg)`,
+      }}
+
+            >
+                
                 <div className="about-hero-content">
                     <h1>ABOUT OUR COMPANY</h1>
 
@@ -125,7 +132,12 @@ const About = () => {
             <WhyChooseUs />
 
             {/* STATS */}
-            <section className="stats-section" ref={sectionRef}>
+            <section className="stats-section"  
+            
+              style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/bg-details.jpg.jpeg)` }}
+
+
+            ref={sectionRef}>
                 <div className="stats-overlay">
                     <div className="stats-container">
 
