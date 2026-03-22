@@ -10,18 +10,18 @@ const popularData = [
     img: "https://www.gaurcity2.com/blogs/wp-content/uploads/2021/08/flats-2.png"
   },
   {
-    name: "Greater Noida West",
+    name: "Greater Noida  West",
     img: "https://www.prefeaconsultants.com/images/nirala-india/IMG_2978.jpeg"
   }
 ];
 
 const Popular = () => {
   return (
-    <section className="popular">
+    <section className="popular-1">
 
       <h2 className="section-title">
         <span>Popular</span> Places
-      </h2>
+      </h2> <br /> <br />
       <p>Properties In Most Popular Places.</p>
 
       <div className="popular-container">
@@ -35,7 +35,7 @@ const Popular = () => {
             </div>
 
             {/* TEXT */}
-            <div className="card-content">
+            <div className="card-content"> 
               <h3>{item.name}</h3>
             </div>
 

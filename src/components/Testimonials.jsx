@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
+import {  Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -33,18 +33,19 @@ const testimonials = [
   }
 ];
 
-const Testimonials = () => {
+const Testimonials = () => {  
   return (
     <section className="testimonials">
 
-      <h2 className="test-title">Clients Testimonials</h2>
-        <p></p>
+      <h2 className="test-title"><span>Clients</span> Testimonials</h2>
+        <p>We collect reviews from our customers.</p>
       <Swiper
-        modules={[Navigation, Autoplay]}
+        modules={[Autoplay]}
         spaceBetween={25}
-        navigation
         loop={true}
-        autoplay={{ delay: 3000 }}
+        autoplay={{ delay: 2500,
+          disableOnInteraction: false
+         }}
         breakpoints={{
           0: { slidesPerView: 1 },
           640: { slidesPerView: 2 },

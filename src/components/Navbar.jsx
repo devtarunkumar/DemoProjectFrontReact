@@ -45,17 +45,17 @@ const Navbar = () => {
                     <Link to="/about">About <FontAwesomeIcon icon={faChevronDown} /></Link>
                     <ul className="dropdown-menu">
                         <li><Link to="/founder">About Founder</Link></li>
-                        <li><Link to="/careers">Careers</Link></li>
-                        <li><Link to="/team">Our Team</Link></li>
+                        <li><Link to="/careers">10 Years of Experience</Link></li>
+                        <li><Link to="/team">Expert & Friendly Team</Link></li>
                     </ul>
                 </li>
 
                 <li className="dropdown">
                     <Link to="/projects">Projects <FontAwesomeIcon icon={faChevronDown} /></Link>
                     <ul className="dropdown-menu">
-                        <li><Link to="/project1">Project 1</Link></li>
-                        <li><Link to="/project2">Project 2</Link></li>
-                        <li><Link to="/project3">Project 3</Link></li>
+                        <li><Link to="/project1">Noida</Link></li>
+                        <li><Link to="/project2">Greater Noida</Link></li>
+                        <li><Link to="/project3">Greater Noida West</Link></li>
                     </ul>
                 </li>
 

@@ -1,135 +1,159 @@
 /* =====================
    TEAM SECTION
 ===================== */
-
 .team{
-padding:120px 60px;
-background:linear-gradient(180deg,#f8f9fb,#eef2f7);
-text-align:center;
+    padding:120px 60px;
+    background:linear-gradient(180deg,#f8f9fb,#eef2f7);
+    text-align:center;
 }
 span{
-   color: #444444;
+    color: #444444;
 }
-/* Heading */
-
 .team-title{
-font-size:42px;
-font-weight:700;
-margin-bottom:10px;
-color:#111;
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:10px;
+    color:#111;
 }
-
 .team-desc{
-max-width:700px;
-margin:0 auto 60px;
-color:#666;
-line-height:1.7;
-font-size:17px;
+    max-width:700px;
+    margin:0 auto 60px;
+    color:#666;
+    line-height:1.7;
+    font-size:17px;
 }
-
 
 /* =====================
    GRID LAYOUT
 ===================== */
-
 .team-container{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-max-width:1200px;
-margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    max-width:1200px;
+    margin:auto;
 }
-
 
 /* =====================
    TEAM CARD
 ===================== */
-
 .team-card{
-background:#fff;
-border-radius:15px;
-overflow:hidden;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
-transition:all 0.4s ease;
-position:relative;
+    perspective: 1000px;
+    border-radius:15px;
+    overflow:hidden;
+    height:400px;
+    cursor:pointer;
 }
-
 .team-card:hover{
-transform:translateY(-10px);
-box-shadow:0 15px 35px rgba(0,0,0,0.15);
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
 }
-
 
 /* =====================
-   IMAGE
+   CARD INNER
 ===================== */
-
-.team-img{
-position:relative;
-overflow:hidden;
+.team-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
 }
-
-.team-img img{
-width:100%;
-height:300px;
-object-fit:cover;
-transition:transform 0.4s ease;
+/* Desktop hover flip */
+.team-card:hover .team-card-inner{
+    transform: rotateY(180deg);
 }
-
-/* Zoom effect */
-
-.team-card:hover .team-img img{
-transform:scale(1.08);
+/* Mobile click flip */
+.team-card-inner.flipped{
+    transform: rotateY(180deg);
 }
-
-
-
 
 /* =====================
-   INFO
+   FRONT & BACK
 ===================== */
-
-.team-info{
-padding:22px;
+.team-card-front,
+.team-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
-.team-info h3{
-font-size:20px;
-margin-bottom:5px;
-color:#111;
+/* Front */
+.team-card-front .team-img img,
+.team-card-back .team-img img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    transition: transform 0.4s ease;
 }
-.team-info h3:hover{
-   color: #666666;
+.team-card:hover img{
+    transform:scale(1.08);
+}
+.team-card-front .team-info{
+    padding:15px 20px;
+    background:#fff;
+}
+.team-card-front .team-info h3{
+    font-size:20px;
+    margin-bottom:5px;
+    color:#111;
+}
+.team-card-front .team-info p{
+    color:#777;
+    font-size:15px;
+    line-height:1.6;
+    margin:0;
 }
 
-.team-info p{
-color:#777;
-font-size:15px;
-line-height:1.6;
+/* Back */
+.team-card-back{
+    transform:rotateY(180deg);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    position: relative;
 }
-
+.team-card-back .team-info.back-info{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    right:20px;
+    background:rgba(255,255,255,0.9);
+    padding:15px;
+    border-radius:10px;
+}
+.team-card-back .back-info h3{
+    margin-bottom:10px;
+    color:#111;
+}
+.team-card-back .back-info p{
+    color:#555;
+    font-size:15px;
+    line-height:1.6;
+    text-align:center;
+}
 
 /* =====================
    MOBILE RESPONSIVE
 ===================== */
-
 @media (max-width:768px){
-
-.team{
-padding:80px 20px;
-}
-
-.team-title{
-font-size:28px;
-}
-
-.team-desc{
-font-size:15px;
-margin-bottom:40px;
-}
-
-.team-img img{
-height:240px;
-}
-
+    .team{
+        padding:80px 20px;
+    }
+    .team-title{
+        font-size:28px;
+    }
+    .team-desc{
+        font-size:15px;
+        margin-bottom:40px;
+    }
+    .team-card-front .team-img img,
+    .team-card-back .team-img img{
+        height:240px;
+    }
 }

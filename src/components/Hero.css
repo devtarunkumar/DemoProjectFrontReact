@@ -1,158 +1,177 @@
+/* ===================== */
+/* HERO SECTION */
+/* ===================== */
+
 .hero {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  position: relative;
+  z-index: 1;
+
+  height: 100vh;
+  padding: 0 20px;
+  color: #f7eeee;
+
+  background-image: url("/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed; /* desktop parallax */
+}
+
+/* ===================== */
+/* HEADING */
+/* ===================== */
+
+.hero h1 {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 1.2;
+  max-width: 900px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* ===================== */
+/* PARAGRAPH */
+/* ===================== */
+
+.hero p {
+  font-size: 18px;
+  max-width: 700px;
+  line-height: 1.6;
+  color: #fdfafa;
+  margin-bottom: 35px;
+}
+
+/* ===================== */
+/* TYPING TEXT */
+/* ===================== */
+
+.typing-text {
+  color: white;
+  border-right: 2px solid white;
+  padding-right: 6px;
+  margin-left: 8px;
+  animation: cursor 1s infinite;
+  text-decoration: underline;
+}
+
+@keyframes cursor {
+  0% { border-color: white; }
+  50% { border-color: transparent; }
+  100% { border-color: white; }
+}
+
+/* ===================== */
+/* BUTTONS */
+/* ===================== */
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background: #ff6600;
+  border: none;
+  padding: 14px 30px;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 6px 20px rgba(255, 102, 0, 0.4);
+}
+
+.btn-primary:hover {
+  background: #ff4500;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid white;
+  padding: 14px 30px;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: black;
+}
+
+/* ===================== */
+/* WHATSAPP BUTTON */
+/* ===================== */
+
+.whatsapp-btn {
+  position: fixed;
+  left: 20px;
+  bottom: 30px;
+  background: #25D366;
+  color: white;
+  font-size: 26px;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+  background: #20b954;
+}
+
+/* ===================== */
+/* MOBILE RESPONSIVE */
+/* ===================== */
+
+@media (max-width: 768px) {
+
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    padding: 100px 20px;
+
+   
+
+    /*  fake parallax feel */
+    background-position: center top;
+  }
+  .hero h1 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .hero-buttons {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
-    padding: 0 20px;
-    color: rgb(247, 238, 238);
+    width: 100%;
+    max-width: 260px;
+  }
 
-    /* Fixed background */
-    background-image: url("/bg.png"); /* अपनी hero image */
-    background-size: cover;          /* पूरी screen cover */
-    background-position: center;     /* center align */
-    background-repeat: no-repeat;
-    background-attachment: fixed;    /* <-- ये important है */
-}
-/* Heading */
-
-.hero h1{
-font-size:45px;
-font-weight:600;
-line-height:1.2;
-max-width:900px;
-margin-bottom:20px;
-letter-spacing:1px;
-}
-
-/* Paragraph */
-
-.hero p{
-font-size:18px;
-max-width:700px;
-line-height:1.6;
-color:rgb(253, 250, 250);
-margin-bottom:35px;
-}
-
-/* Typing Text */
-
-.typing-text{
-color:white;
-border-right:2px solid white;
-padding-right:6px;
-margin-left:8px;
-animation:cursor 1s infinite;
-text-decoration: underline;
-
-}
-
-/* Cursor Animation */
-
-@keyframes cursor{
-0%{border-color:white;}
-50%{border-color:transparent;}
-100%{border-color:white;}
-}
-
-/* Buttons */
-
-.hero-buttons{
-display:flex;
-gap:20px;
-margin-top:20px;
-}
-
-.btn-primary{
-background:#ff6600;
-border:none;
-padding:14px 30px;
-color:white;
-font-size:16px;
-border-radius:8px;
-cursor:pointer;
-transition:0.3s;
-box-shadow:0 6px 20px rgba(255,102,0,0.4);
-}
-
-.btn-primary:hover{
-background:#ff4500;
-transform:translateY(-2px);
-}
-
-.btn-secondary{
-background:transparent;
-border:2px solid white;
-padding:14px 30px;
-color:white;
-font-size:16px;
-border-radius:8px;
-cursor:pointer;
-transition:0.3s;
-}
-
-.btn-secondary:hover{
-background:white;
-color:black;
-}
-.whatsapp-btn{
-position:fixed;
-left:20px;
-bottom:30px;
-background:#25D366;
-color:white;
-font-size:26px;
-width:55px;
-height:55px;
-display:flex;
-align-items:center;
-justify-content:center;
-border-radius:50%;
-box-shadow:0 5px 20px rgba(0,0,0,0.3);
-z-index:1000;
-transition:0.3s;
-}
-
-.whatsapp-btn:hover{
-transform:scale(1.1);
-background:#20b954;
-}
-@media (max-width:768px){
-
-/* Hero section */
-.hero{
-height:auto;
-padding:120px 20px;
-
-/* Disable parallax on mobile */
-background-attachment:scroll;
-}
-
-/* Heading */
-.hero h1{
-font-size:28px;
-line-height:1.3;
-}
-
-/* Paragraph */
-.hero p{
-font-size:15px;
-max-width:100%;
-}
-
-/* Buttons stack */
-.hero-buttons{
-flex-direction:column;
-gap:15px;
-width:100%;
-max-width:260px;
-}
-
-/* Button full width */
-.btn-primary,
-.btn-secondary{
-width:100%;
-}
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+  }
 
 }

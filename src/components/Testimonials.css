@@ -1,21 +1,15 @@
     /* ===================== */
 
-    .testimonials{
-    padding:100px 50px;
-    background:linear-gradient(135deg,#f8f9fb,#eef2f7);
-    text-align:center;
-    }
-
+  .testimonials{
+  padding:80px 40px;
+  background:#f3f4f6;   /* 👈 light grey like image */
+  text-align:center;
+}
     /* heading */
 
-    .test-title{
-    font-size:38px;
-    font-weight:700;
-    margin-bottom:10px;
-    color:#111;
-    }
 
-    /* sub text */
+ 
+/* sub text */
 
     .testimonials p{
     max-width:600px;
@@ -26,105 +20,35 @@
 
     /* card */
 
-    .testimonial-card{
-    border-radius:18px;
-    overflow:hidden;
-    position:relative;
-    box-shadow:0 12px 30px rgba(0,0,0,0.08);
-    transition:all 0.4s ease;
-    cursor:pointer;
-    }
+   .testimonial-card{
+  background:#fff;
+  padding:15px;                 /* 👈 white frame */
+  border-radius:6px;            /* 👈 slight radius */
+  box-shadow:0 4px 10px rgba(0,0,0,0.08);
+  transition:0.3s ease;
+    border:1px solid #eee;
+
+}
 
     /* hover effect */
 
     .testimonial-card:hover{
-    transform:translateY(-10px) scale(1.04);
-    box-shadow:0 20px 50px rgba(0,0,0,0.18);
+          transform:translateY(-4px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
     }
 
     /* image */
 
-    .testimonial-card img{
-    width:100%;
-    height:320px;
-    object-fit:cover;
-    display:block;
-    transition:transform 0.6s ease;
-    }
+   .testimonial-card img{
+  width:100%;
+  height:220px;        /* 👈 same proportion */
+  object-fit:cover;
+  border-radius:4px;
+}
 
-    /* zoom effect */
 
-    .testimonial-card:hover img{
-    transform:scale(1.12);
-    }
 
-    /* overlay effect */
 
-    .testimonial-card::after{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:linear-gradient(to top, rgba(0,0,0,0.4), transparent);
-    opacity:0;
-    transition:0.4s;
-    padding: 50px;
-    }
-
-    .testimonial-card:hover::after{
-    opacity:1;
-    }
-
-    /* ===================== */
-    /* SWIPER ARROWS FIX */
-    /* ===================== */
-
-   
-
-    .swiper-button-next,
-    .swiper-button-prev{
-    position:absolute;
-    bottom:10px;
-    top:auto;
-
-    background:#fff;
-    width:45px;
-    height:45px;
-    border-radius:50%;
-    box-shadow:0 5px 15px rgba(0,0,0,0.15);
-    color:#ff6600;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    backdrop-filter: blur(10px);
-    }
-
-    /* PERFECT CENTER ALIGNMENT */
-
-    .swiper-button-prev{
-    left: calc(50% - 55px);
-    }
-
-    .swiper-button-next{
-    left: calc(50% + 10px);
-    }
-
-    /* hover */
-
-    .swiper-button-next:hover,
-    .swiper-button-prev:hover{
-    background:#ff6600;
-    color:#fff;
-    }
-
-    /* arrow icon size */
-
-    .swiper-button-next::after,
-    .swiper-button-prev::after{
-    font-size:18px;
-    font-weight:bold;
-    }
 
     /* tablet */
 
@@ -152,6 +76,6 @@
     }
 
     .testimonial-card img{
-        height:220px;
+        height:230px;
     }
     }

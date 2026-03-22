@@ -1,22 +1,25 @@
-/* =====================
-   TEAM HERO SECTION
-===================== */
-
-.team-hero{
-height:420px;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:0 20px;
-
-background-image:url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d");
-background-size:cover;
-background-position:center;
-position:relative;
-overflow:hidden;
+/* Hero Section */
+.about-hero {
+  height: 300px;
+  background-image: url("/bg-testimonials-2.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
 }
 
+.about-hero-content h1 {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.about-hero-content .breadcrumb {
+  color: #fff;
+}
 /* dark overlay */
 
 .team-hero::before{
@@ -47,7 +50,107 @@ line-height:1.7;
 color:#ddd;
 }
 
+/* =========================
+TEAM INTRO SECTION
+========================= */
 
+.team-intro {
+  padding: 80px 20px;
+  background: #f1f2f3;
+  display: flex;
+  justify-content: center;
+}
+.Ex{
+   color: rgb(241, 43, 76);
+   font-weight: bolder;
+}
+.Ft{
+   color: #cfae6c;
+   font-weight:400;
+}
+/* LEFT BORDER STYLE */
+
+.Heads2 {
+  border-left: 22px solid #e63946;
+  padding-left: 20px;
+  max-width: 1000px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+
+.team-intro-container {
+  max-width: 1000px;
+  text-align: center;
+}
+
+/* heading */
+
+.team-heading {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+  
+}
+
+/* underline */
+.team-heading::after {
+  content: "";
+  width: 70px;
+  height: 3px;
+  background: #cfae6c;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -8px;
+}
+
+/* subtitle */
+
+.team-subtitle {
+  font-size: 1.1rem;
+  color: #777;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* description */
+
+.team-description {
+  text-align: center;
+}
+
+.team-description p {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.Gr{
+   color: #444444;
+   font-weight: bolder;
+}
+/* =========================
+RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .team-heading {
+    font-size: 1.8rem;
+  }
+
+  .team-subtitle {
+    font-size: 1rem;
+  }
+
+  .team-description p {
+    font-size: 0.95rem;
+  }
+}
 /* =====================
    TABLET RESPONSIVE
 ===================== */

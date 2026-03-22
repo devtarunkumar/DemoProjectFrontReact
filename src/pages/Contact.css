@@ -1,88 +1,24 @@
-/* =====================
-   CONTACT HERO
-===================== */
-
-.contact-hero{
-height:350px;
-background-image:url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3");
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-position:relative;
-overflow:hidden;
+/* Hero Section */
+.about-hero {
+  height: 300px;
+  background-image: url("/bg-testimonials-2.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
 }
 
-.contact-hero::before{
-content:"";
-position:absolute;
-inset:0;
-background:rgba(0,0,0,0.6);
+.about-hero-content h1 {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
-.contact-hero-content{
-position:relative;
-color:white;
-z-index:2;
-}
-
-.contact-hero h1{
-font-size:48px;
-margin-bottom:10px;
-font-weight:700;
-}
-
-
-/* =====================
-   CONTACT INFO CARDS
-===================== */
-
-.contact-info{
-padding:100px 80px;
-background:#f8f9fb;
-}
-
-.contact-cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-max-width:1100px;
-margin:auto;
-}
-
-.contact-card{
-background:white;
-padding:40px;
-text-align:center;
-border-radius:12px;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
-transition:all 0.3s ease;
-}
-
-.contact-card:hover{
-transform:translateY(-8px);
-box-shadow:0 15px 35px rgba(0,0,0,0.15);
-}
-
-/* icon */
-.contact-card .icon{
-font-size:32px;
-color:#ff6600;
-margin-bottom:10px;
-}
-
-.contact-card h3{
-margin-top:10px;
-font-size:20px;
-}
-
-.contact-card p{
-color:#666;
-margin-top:5px;
-font-size:16px;
-line-height:1.6;
+.about-hero-content .breadcrumb {
+  color: #fff;
 }
 
 
@@ -150,6 +86,105 @@ background:#ff4500;
 transform:translateY(-2px);
 }
 
+/* =========================
+WRAPPER
+========================= */
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  align-items: stretch;
+}
+
+/* =========================
+FORM SIDE
+========================= */
+
+.form-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* =========================
+IMAGE SIDE
+========================= */
+
+.contact-image-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-image-box img {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* =========================
+OVERLAY TEXT
+========================= */
+
+.contact-overlay {
+  position: absolute;   /* ✅ FIXED */
+  inset: 0;
+
+  background: linear-gradient(
+    135deg,
+    rgba(79, 38, 224, 0.75),
+    rgba(72, 53, 240, 0.65)
+  );
+
+  color: white;
+  padding: 45px 40px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* HEADING */
+.contact-overlay h3 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/* SUBTITLE */
+.overlay-sub {
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+  color: white; 
+  line-height: 1.6;
+}
+
+/* CONTACT TEXT */
+.contact-overlay p {
+  font-size: 16px;
+  line-height: 2.4;
+  margin-bottom: 12px;
+  padding-left: 18px;
+  position: relative;
+}
+
+.contact-overlay p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 4px;
+  height: 14px;
+  background: #043a7c;
+  border-radius: 2px;
+}
 
 /* =====================
    MAP
@@ -162,59 +197,105 @@ border-radius:10px;
 overflow:hidden;
 }
 
+/* =========================
+LAPTOP
+========================= */
 
-/* =====================
-   TABLET RESPONSIVE
-===================== */
+@media (max-width: 1024px) {
 
-@media (max-width:1024px){
+  .contact-form-section {
+    padding: 80px 40px;
+  }
 
-.contact-info,
-.contact-form-section{
-padding:80px 40px;
+  .contact-image-box img {
+    min-height: 450px;
+  }
+
+  .form-container {
+    padding: 25px;
+  }
 }
 
-.contact-hero h1{
-font-size:36px;
+/* =========================
+TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-section {
+    padding: 60px 20px;
+  }
+
+  .contact-image-box {
+    height: 350px;
+  }
+
+  .contact-image-box img {
+    height: 100%;
+    min-height: unset;
+  }
+
+  /* ✅ OVERLAY SAME RAHEGA */
+  .contact-overlay {
+    position: absolute;
+    inset: 0;
+    padding: 25px;
+  }
+
+  .contact-overlay h3 {
+    font-size: 1.6rem;
+  }
+
+  .overlay-sub {
+    font-size: 0.9rem;
+  }
+
+  .contact-overlay p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .form-container h2 {
+    font-size: 26px;
+  }
 }
 
-}
+/* =========================
+MOBILE
+========================= */
 
+@media (max-width: 480px) {
 
-/* =====================
-   MOBILE RESPONSIVE
-===================== */
+  .contact-form-section {
+    padding: 50px 15px;
+  }
 
-@media (max-width:768px){
+  .form-container {
+    padding: 20px;
+  }
 
-.contact-hero{
-height:260px;
-}
+  .contact-image-box {
+    height: 280px;
+  }
 
-.contact-hero h1{
-font-size:26px;
-}
+  .contact-overlay {
+    padding: 20px;
+  }
 
-/* section padding fix */
-.contact-info,
-.contact-form-section{
-padding:60px 20px;
-}
+  .contact-overlay h3 {
+    font-size: 1.4rem;
+  }
 
-/* card spacing */
-.contact-cards{
-gap:20px;
-}
+  .overlay-sub {
+    font-size: 0.85rem;
+  }
 
-/* form heading */
-.form-container h2{
-font-size:24px;
-}
-
-/* better mobile inputs */
-form input,
-form textarea{
-font-size:16px;
-}
-
+  .contact-overlay p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
 }

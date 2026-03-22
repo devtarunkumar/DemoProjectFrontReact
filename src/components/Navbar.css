@@ -1,25 +1,25 @@
 /* RESET */
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-  font-family:'Poppins',sans-serif;
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
 
 /* LOGO */
 
-.logo{
-  overflow:hidden;
-  display:inline-block;
+.logo {
+  overflow: hidden;
+  display: inline-block;
 }
 
-.logo img{
-  width:100px;
+.logo img {
+  width: 100px;
 }
 
 
@@ -27,134 +27,152 @@ body{
 
 /* NAVBAR */
 
-.navbar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px 60px;
-  height:80px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  height: 80px;
 
-  background:#FFFFFF1F;
-  backdrop-filter:blur(10px);
-  -webkit-backdrop-filter:blur(10px);
-  position:absolute;
-  top:0;
-  width:100%;
-  z-index:999;
-  transition:all 0.5s ease;
+  background: #FFFFFF1F;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.5s ease;
 }
 
 
 /* NAVBAR SCROLL */
 
-.navbar.scrolled{
-  position:fixed;
-  top:0;
-  width:100%;
-  background:white;
-  box-shadow:0 5px 25px rgba(0,0,0,0.1);
+.navbar.scrolled {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
 }
 
-.navbar.scrolled .logo img{
-  width:100px;
+.navbar.scrolled .logo img {
+  width: 100px;
 }
 
 .navbar.scrolled .nav-links a{
-   color: #707070;
+  color:#707070;
+
+  padding:8px 16px;
+  border-radius:6px;
+  transition:0.3s;
 }
 
 .navbar.scrolled .nav-links a:hover{
-  color:#ff6600;
-  text-decoration:underline;
+  background:#D8B872;   /* 👈 same gold */
+  color:white;
 }
 
 
 /* NAV LINKS (DESKTOP) */
 
-.nav-links{
-  display:flex;
-  list-style:none;
-  gap:35px;
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
 }
 
-.nav-links li{
-  position:relative;
-  padding:10px 0;
+.nav-links li {
+  position: relative;
+  padding: 10px 0;
 }
 
-.nav-links a{
-  color:white;
-  text-decoration:none;
-  font-size:18px;
-  font-weight:500;
-  transition:0.3s;
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s;
+  padding: 8px 16px;
+  /* 👈 important */
+  border-radius: 6px;
+  transition: all 0.3s ease;
+
 }
 
-.nav-links a:hover{
-  color:#ff6600;
-  transform:translateY(-2px);
+.nav-links a:hover {
+  color: white;
+  background-color: #D8B872;
+  transform: translateY(-2px);
+
 }
 
 
 /* NAV BUTTON */
 
-.nav-btn button{
-  background:#D8B872;
-  border:none;
-  padding:10px 20px;
-  color:white;
-  border-radius:10px;
-  font-size:15px;
-  cursor:pointer;
-  transition:0.3s;
+.nav-btn button {
+  background: #D8B872;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.nav-btn button:hover{
-  background:#a3833c;
-  transform:scale(1.05);
+.nav-btn button:hover {
+  background: #a3833c;
+  transform: scale(1.05);
 }
 
 
 /* DROPDOWN */
 
-.dropdown-menu{
-  display:none;
-  position:absolute;
-  top:100%;
-  left:0;
-  background:white;
-  width:200px;
-  border-radius:8px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.2);
-  list-style:none;
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  list-style: none;
+    padding:8px;
+
 }
 
 .dropdown-menu li{
-  border-bottom:1px solid #eee;
+  border-bottom:none;
+  padding:4px;   /* 👈 thoda spacing for box effect */
 }
 
 .dropdown-menu li a{
   display:block;
-  padding:12px 20px;
+  padding:10px 15px;
+
   color:#333;
+  border-radius:6px;        /* 👈 box shape */
+  transition:0.3s ease;
 }
 
-.dropdown-menu li a:hover{
-  background:#f2f2f2;
+.dropdown-menu li a:hover {
+  background: #D8B872;
+  color:white;
 }
 
-.dropdown:hover .dropdown-menu{
-  display:block;
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 
 /* HAMBURGER ICON */
 
-.menu-icon{
-  display:none;
-  font-size:26px;
-  color:white;
-  cursor:pointer;
+.menu-icon {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
 }
 
 
@@ -162,91 +180,96 @@ body{
    MOBILE RESPONSIVE
 ========================= */
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
-  .navbar{
-    padding:15px 20px;
+  .navbar {
+    padding: 15px 20px;
+  }
+  .navbar.scrolled .menu-icon {
+    color: black;
   }
 
-  .logo img{
-    width:120px;
+  .logo img {
+    width: 120px;
   }
 
   /* hamburger */
 
-  .menu-icon{
-    display:block;
+  .menu-icon {
+    display: block;
   }
 
   /* MOBILE MENU (GOLD BACKGROUND) */
 
-  .nav-links{
-    position:absolute;
-    top:80px;
-    left:0;
-    width:100%;
-    background:#D8B872;  /* ✅ GOLD */
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #D8B872;
+    
 
-    flex-direction:column;
-    align-items:center;
-    gap:15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 
-    padding:25px 0;
-    display:none;
+    padding: 25px 0;
+    display: none;
   }
 
   /* SHOW MENU */
 
-  .nav-links.active{
-    display:flex;
+  .nav-links.active {
+    display: flex;
   }
 
   /* MENU ITEMS (SILVER BOXES) */
 
-  .nav-links li{
-    width:90%;
-    background:#f1f1f1; /* ✅ SILVER */
-    border-radius:10px;
-    text-align:center;
-    padding:12px 0;
-    transition:0.3s;
+  .nav-links li {
+    width: 90%;
+    background: #f1f1f1;
+    
+    border-radius: 10px;
+    text-align: center;
+    padding: 12px 0;
+    transition: 0.3s;
   }
 
-  .nav-links li:hover{
-    background:#e5e7eb;
+  .nav-links li:hover {
+    background: #D8B872;
   }
 
   /* TEXT COLOR */
 
-  .nav-links a{
-    color:#111;
-    font-size:17px;
-    font-weight:600;
+  .nav-links a {
+    color: #111;
+    font-size: 17px;
+    font-weight: 600;
   }
 
   /* HIDE BUTTON */
 
-  .nav-btn{
-    display:none;
+  .nav-btn {
+    display: none;
   }
 
   /* DROPDOWN MOBILE */
 
-  .dropdown-menu{
-    position:static;
-    width:90%;
-    box-shadow:none;
-    display:none;
+  .dropdown-menu {
+    position: static;
+    width: 90%;
+    box-shadow: none;
+    display: none;
   }
 
-  .dropdown-menu li{
-    background:#eaeaea;
-    margin:5px 0;
-    border-radius:6px;
+  .dropdown-menu li {
+    background: #eaeaea;
+    margin: 5px 0;
+    border-radius: 6px;
   }
 
-  .dropdown:hover .dropdown-menu{
-    display:block;
+  .dropdown:hover .dropdown-menu {
+    display: block;
   }
 
 }

@@ -34,7 +34,6 @@ const Home = () => {
       <Team />
       <Testimonials />
       <Partners />
-      <Footer />
     </>
   );
 };
@@ -46,7 +45,7 @@ createRoot(document.getElementById('root')).render(
       <Routes>
 
 
-        
+
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/founder" element={<Founder />} />
@@ -58,9 +57,9 @@ createRoot(document.getElementById('root')).render(
         <Route path="/project3" element={<Project3 />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/contact" element={<Contact />} />
-        
-      </Routes>
 
+      </Routes>
+      <Footer />
     </Router>
   </StrictMode>
 );

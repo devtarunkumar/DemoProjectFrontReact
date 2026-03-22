@@ -1,148 +1,303 @@
-/* =====================
-   CAREERS SECTION
-===================== */
-
-.careers{
-padding:140px 80px 100px;
-background:linear-gradient(180deg,#b0b7c5,#eef2f7);
-text-align:center;
-overflow:hidden;
+/* Hero Section */
+.about-hero {
+  height: 300px;
+  background-image: url("/bg-testimonials-2.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
 }
 
-.careers-container{
-max-width:1100px;
-margin:auto;
+.about-hero-content h1 {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.about-hero-content .breadcrumb {
+  color: #fff;
+}
+
+/* =========================
+CAREERS MAIN - PREMIUM UI
+========================= */
+
+.careers-main {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
+  margin-top: 110px;
+}
+
+.careers-container {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* IMAGE SIDE */
+
+.careers-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.careers-img img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease;
+}
+
+.careers-img img:hover {
+  transform: scale(1.03);
+}
+
+/* TEXT SIDE */
+
+.careers-content {
+  flex: 1;
+}
+
+.careers-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #222;
+  position: relative;
+}
+
+/* underline effect */
+.careers-content h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #cfae6c;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+}
+
+/* paragraph readability improve */
+.careers-content p {
+  font-size: 1.05rem;
+  margin-bottom: 25px;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* WhatsApp button premium */
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 28px;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+@media (max-width: 992px) {
+  .careers-container {
+    gap: 40px;
+  }
+
+  .careers-content h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .careers-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .careers-content h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .careers-img img {
+    max-width: 100%;
+  }
+
+  .careers-content p {
+    font-size: 1rem;
+  }
+
+  .whatsapp-btn {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .careers-main {
+    padding: 50px 15px;
+  }
+
+  .careers-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .careers-content p {
+    font-size: 0.95rem;
+  }
+}
+/* =========================
+WHY CLIENTS TRUST US
+========================= */
+
+.trust-section {
+  padding: 80px 20px;
+  background: #f5f7fb;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.trust-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 
-/* =====================
-   HEADING
-===================== */
-
-.careers h1{
-font-size:42px;
-margin-bottom:12px;
-font-weight:700;
-color:#111;
+.trust-title span {
+  color: #e63946; /* red highlight */
+  font-weight: bolder;
 }
 
-.careers-desc{
-max-width:600px;
-margin:0 auto 50px;
-color:#666;
-line-height:1.7;
-font-size:17px;
+.trust-subtitle {
+  color: #666;
+  margin-bottom: 50px;
 }
 
-
-/* =====================
-   JOB CARDS GRID
-===================== */
-
-.job-cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
+.trust-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
-
-/* =====================
-   CARD
-===================== */
-
-.job-card{
-background:white;
-padding:30px;
-border-radius:12px;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
-transition:all 0.3s ease;
+.trust-card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
 }
 
-.job-card:hover{
-transform:translateY(-8px);
-box-shadow:0 15px 35px rgba(0,0,0,0.15);
+.trust-card:hover {
+  transform: translateY(-8px);
 }
 
-.job-card h3{
-margin-bottom:10px;
-font-size:20px;
+.trust-card .icon {
+  font-size: 65px;
+  margin-bottom: 15px;
+  color: #cfae6c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.job-card p{
-color:#777;
-margin-bottom:20px;
-line-height:1.6;
+/* Optional premium hover */
+.trust-card:hover .icon {
+  color: #e63946;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
 
-
-/* =====================
-   BUTTON
-===================== */
-
-.job-card button{
-background:#ff6600;
-border:none;
-padding:12px 22px;
-color:white;
-border-radius:8px;
-cursor:pointer;
-font-size:15px;
-transition:0.3s;
+.trust-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
-.job-card button:hover{
-background:#ff4500;
-transform:translateY(-2px);
+.trust-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
 }
 
+/* Responsive */
 
-/* =====================
-   TABLET RESPONSIVE
-===================== */
+@media (max-width: 768px) {
+  .trust-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* =========================
+PREMIUM HEADING
+========================= */
 
-@media (max-width:1024px){
-
-.careers{
-padding:110px 40px 80px;
+.premium-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  line-height: 1.3;
+  position: relative;
+  margin-bottom: 20px;
+  
 }
 
-.careers h1{
-font-size:34px;
+/* normal text */
+.premium-heading .light {
+  color: #333;
+  font-weight: 900;
 }
 
+/* gold highlight */
+.premium-heading .highlight {
+  color: #cfae6c;
+  font-weight: 800;
 }
 
-
-/* =====================
-   MOBILE RESPONSIVE
-===================== */
-
-@media (max-width:768px){
-
-.careers{
-padding:80px 20px;
+/* bold last line */
+.premium-heading .bold {
+  display: inline-block;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #333;
 }
 
-/* heading resize */
-.careers h1{
-font-size:26px;
+/* underline effect */
+.premium-heading::after {
+  content: "";
+  width: 190px;
+  height: 3px;
+  background: #000;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
 }
 
-.careers-desc{
-font-size:15px;
-margin-bottom:35px;
-}
+/* responsive */
+@media (max-width: 768px) {
+  .premium-heading {
+    font-size: 1.8rem;
+    text-align: center;
+  }
 
-/* cards spacing */
-.job-cards{
-gap:20px;
-}
-
-/* better touch button */
-.job-card button{
-width:100%;
-padding:14px;
-font-size:16px;
-}
-
+  .premium-heading::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

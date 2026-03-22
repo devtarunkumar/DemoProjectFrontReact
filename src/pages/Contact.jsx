@@ -1,108 +1,114 @@
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 import ScrollTopButton from "../components/ScrollTopButton";
 import { FaWhatsapp } from "react-icons/fa";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import "./Contact.css";
 
 const Contact = () => {
 
-return(
+    return (
 
-<>
+        <>
 
-<Navbar forceScrolled={true}/>
+            <Navbar forceScrolled={true} />
 
-{/* HERO */}
-
-<section className="contact-hero">
-
-<div className="contact-hero-content">
-
-<h1>Contact Us</h1>
-
-<p>
-We would love to hear from you. Get in touch with our team today.
-</p>
-
-</div>
-
-</section>
+            {/* Hero Section */}
+            <section className="about-hero">
+                <div className="about-hero-content">
+                    <h1>CONTACT US</h1>
+                    <p className="breadcrumb">
+                        <Link to="/">Home</Link> / <span>CONTACT US</span>
+                    </p>
+                </div>
+            </section>
 
 
-{/* CONTACT INFO */}
-
-<section className="contact-info">
-
-<div className="contact-cards">
-
-<div className="contact-card">
-<FaPhoneAlt/>
-<h3>Call Us</h3>
-<p>+91 70824 29925</p>
-</div>
-
-<div className="contact-card">
-<FaEnvelope/>
-<h3>Email</h3>
-<p>info@stratvizsolution.com</p>
-</div>
-
-<div className="contact-card">
-<FaMapMarkerAlt/>
-<h3>Location</h3>
-<p>Gurgaon, Haryana</p>
-</div>
-
-</div>
-
-</section>
 
 
-{/* CONTACT FORM */}
 
-<section className="contact-form-section">
+            {/* CONTACT FORM + IMAGE OVERLAY */}
 
-<div className="form-container">
+            <section className="contact-form-section">
 
-<h2>Send Us a Message</h2>
+                <div className="contact-wrapper">
 
-<form>
+                    {/* LEFT SIDE - FORM */}
+                    <div className="form-container">
 
-<input type="text" placeholder="Your Name" required/>
+                        <h2>Send Us a Message</h2>
 
-<input type="email" placeholder="Your Email" required/>
+                        <form>
+                            <input type="text" placeholder="Your Name" required />
+                            <input type="email" placeholder="Your Email" required />
+                            <input
+                                type="tel"
+                                placeholder="Your Mobile Number"
+                                pattern="[0-9]{10}"
+                                title="Enter 10-digit mobile number"
+                            />
+                            <textarea placeholder="Your Message" ></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
 
-<input type="text" placeholder="Subject"/>
+                    </div>
 
-<textarea placeholder="Your Message" rows="5"></textarea>
+                    {/* RIGHT SIDE - IMAGE + OVERLAY TEXT */}
+                    <div className="contact-image-box">
 
-<button type="submit">Send Message</button>
+                        <img src="/bg-testimonials.jpg" alt="Contact" />
 
-</form>
+                        <div className="contact-overlay">
 
-</div>
+                            <h3>Contact Details</h3>
 
-</section>
+                            <p className="overlay-sub">
+                                Please find below contact details and contact us today!
+                            </p>
 
+                            <p>📍 GH-04 B Sector -12, Greater Noida West -201318</p>
+                            <p>📞 +91  99110-93426</p>
+                            <p>✉️ grownestrealty@gmail.com</p>
+                            <p>⏰ 8:00 a.m - 9:00 p.m</p>
 
-{/* GOOGLE MAP */}
+                        </div>
 
-<section className="contact-map">
+                    </div>
 
-<iframe
-src="https://maps.google.com/maps?q=gurgaon&t=&z=13&ie=UTF8&iwloc=&output=embed"
-width="100%"
-height="350"
-style={{border:0}}
-allowFullScreen=""
-loading="lazy"
-></iframe>
+                </div>
 
-</section>
+            </section>
 
-{/* WhatsApp Icon */}
+            {/* GOOGLE MAP - STYLISH */}
+            <section
+                className="contact-map"
+                style={{
+                    padding: '20px',
+                    textAlign: 'center',
+                }}
+            >
+                <h2 style={{ marginBottom: '16px', fontSize: '1.8rem', color: '#333', fontWeight: '600' }}>
+                    OUR LOCATION
+                </h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.123456789012!2d77.362345678901!3d28.571234567890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1f0f1234567%3A0xabcdef123456789!2sGH-04%20B%20Sector%2012%2C%20Greater%20Noida%20West%2C%20Uttar%20Pradesh%20201318!5e0!3m2!1sen!2sin!4v1700745678901!5m2!1sen!2sin"
+                    width="100%"
+                    height="350"
+                    style={{
+                        border: 0,
+                        borderRadius: '12px',
+                        boxShadow: '0 8px 20px rgba(0,0,0,0.2)',
+                        maxWidth: '900px',
+                        margin: '0 auto',
+                        transition: 'transform 0.3s ease',
+                    }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </section>
+
+            {/* WhatsApp Icon */}
             <a
                 href="https://wa.me/919911093426"
                 className="whatsapp-btn"
@@ -110,13 +116,12 @@ loading="lazy"
             >
                 <FaWhatsapp />
             </a>
-<ScrollTopButton/>
+            <ScrollTopButton />
 
-<Footer/>
 
-</>
+        </>
 
-)
+    )
 
 }
 

@@ -1,53 +1,46 @@
 /* =========================
-   PROJECT HERO
+   HERO SECTION
 ========================= */
 
-.projects-hero{
-min-height:350px;
-background:url("https://images.unsplash.com/photo-1492724441997-5dc865305da7");
-background-size:cover;
-background-position:center;
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:white;
-padding:40px 20px;
-position:relative;
+.about-hero {
+  height: 300px;
+  background-image: url("/bg-testimonials-2.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
 }
 
-/* dark overlay (professional look) */
-
-.projects-hero::before{
-content:"";
-position:absolute;
-inset:0;
-background:rgba(0,0,0,0.45);
+.about-hero-content h1 {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
-.projects-hero h1{
-font-size:46px;
-margin-bottom:10px;
-position:relative;
-z-index:1;
+.about-hero-content .breadcrumb {
+  color: #fff;
+  font-size: 1rem;
 }
+
 
 /* =========================
    PROJECT GRID
 ========================= */
 
-.projects-section{
-padding:120px 60px;
-background:#f8f9fb;
+.projects-section {
+  padding: 120px 60px;
+  background: #f8f9fb;
 }
 
-.projects-container{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
-max-width:1200px;
-margin:auto;
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 
@@ -55,67 +48,123 @@ margin:auto;
    PROJECT CARD
 ========================= */
 
-.project-card{
-background:white;
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 10px 30px rgba(0,0,0,0.1);
-transition:0.35s ease;
+.project-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: 0.35s ease;
+  display: flex;
+  flex-direction: column;
 }
 
-.project-card:hover{
-transform:translateY(-10px);
-box-shadow:0 18px 40px rgba(0,0,0,0.15);
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
 }
 
 /* image */
-
-.project-card img{
-width:100%;
-height:220px;
-object-fit:cover;
-transition:0.4s;
+.project-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: 0.4s;
 }
 
-.project-card:hover img{
-transform:scale(1.05);
+.project-card:hover img {
+  transform: scale(1.05);
 }
 
 
 /* =========================
-   INFO
+   PROJECT INFO
 ========================= */
 
-.project-info{
-padding:25px;
+.project-info {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.project-info h3{
-font-size:22px;
-margin-bottom:10px;
+.project-info h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #333;
 }
 
-.project-info p{
-color:#666;
-margin-bottom:18px;
-line-height:1.6;
+.project-info p {
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
 }
 
-/* button */
+/* =========================
+   BUTTONS
+========================= */
 
-.project-btn{
-background:#ff6600;
-color:white;
-padding:10px 18px;
-border-radius:6px;
-text-decoration:none;
-display:inline-block;
-transition:0.3s;
+.project-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.project-btn:hover{
-background:#ff4500;
-transform:translateY(-2px);
+.btn {
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  text-align: center;
+  flex: 1;
+  cursor: pointer;
+}
+
+.enquiry-btn {
+  background: #25D366;
+  color: #fff;
+}
+
+.enquiry-btn:hover {
+  background: #1ebe57;
+}
+
+.details-btn {
+  background: #ff6600;
+  color: #fff;
+}
+
+.details-btn:hover {
+  background: #ff4500;
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   WHATSAPP BUTTON
+========================= */
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25D366;
+  color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
 }
 
 
@@ -123,12 +172,14 @@ transform:translateY(-2px);
    TABLET
 ========================= */
 
-@media (max-width:992px){
-
-.projects-section{
-padding:100px 40px;
-}
-
+@media (max-width: 992px) {
+  .projects-section {
+    padding: 100px 40px;
+  }
+  
+  .project-card img {
+    height: 200px;
+  }
 }
 
 
@@ -136,26 +187,66 @@ padding:100px 40px;
    MOBILE
 ========================= */
 
-@media (max-width:768px){
+@media (max-width: 768px) {
+  .about-hero {
+    height: 260px;
+  }
 
-.projects-hero{
-min-height:260px;
+  .about-hero-content h1 {
+    font-size: 28px;
+  }
+
+  .projects-section {
+    padding: 80px 20px;
+  }
+
+  .projects-container {
+    gap: 20px;
+  }
+
+  .project-card img {
+    height: 180px;
+  }
+
+ .project-buttons {
+    flex-direction: column;
+    gap: 8px; /* controls vertical spacing between buttons */
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 6px 12px; /* top/bottom smaller */
+    margin-bottom: 0; /* ensure no extra margin is adding to height */
+  }
 }
 
-.projects-hero h1{
-font-size:28px;
-}
+/* =========================
+   SMALL MOBILE
+========================= */
 
-.projects-section{
-padding:80px 20px;
-}
+@media (max-width: 480px) {
+  .about-hero {
+    height: 220px;
+  }
 
-.projects-container{
-gap:20px;
-}
+  .about-hero-content h1 {
+    font-size: 24px;
+  }
 
-.project-card img{
-height:200px;
-}
+  .project-card img {
+    height: 150px;
+  }
 
+  .project-info h3 {
+    font-size: 18px;
+  }
+
+  .project-info p {
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
 }

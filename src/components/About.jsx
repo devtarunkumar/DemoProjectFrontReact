@@ -79,9 +79,9 @@ const About = () => {
 
             {/* HERO */}
             <section className="about-hero"
-        
+
             >
-                
+
                 <div className="about-hero-content">
                     <h1>ABOUT OUR COMPANY</h1>
 
@@ -128,9 +128,9 @@ const About = () => {
             <WhyChooseUs />
 
             {/* STATS */}
-            <section className="stats-section"  
+            <section className="stats-section"
 
-            ref={sectionRef}>
+                ref={sectionRef}>
                 <div className="stats-overlay">
                     <div className="stats-container">
 
@@ -174,7 +174,7 @@ const About = () => {
                     modules={[Autoplay, Pagination]}
                     slidesPerView={3}
                     spaceBetween={30}
-                    loop={true} 
+                    loop={true}
                     autoplay={{
                         delay: 0,
                         disableOnInteraction: false
@@ -228,7 +228,6 @@ const About = () => {
 
             </section>
 
-            <Footer />
         </>
     );
 };
