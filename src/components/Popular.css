@@ -53,6 +53,8 @@
   overflow:hidden;
   height:160px;
   transition:0.3s;
+  text-decoration: none;
+
 }
 
 .popular-card:hover{
@@ -89,6 +91,7 @@
   padding: 10px;
   box-sizing: border-box;  /* ensures padding is counted inside width */
   overflow: visible; 
+  margin-top: 65px;
 }
 
 .card-content h3 {
@@ -118,5 +121,8 @@
 
   .popular{
     padding:70px 20px;
+  }
+  .card-content{
+    margin-top: 0px;
   }
 }

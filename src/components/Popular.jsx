@@ -1,17 +1,22 @@
+import { Link } from "react-router-dom";
+
 import "./Popular.css";
 
 const popularData = [
   {
     name: "Noida",
-    img: "https://www.sundreamgroup.com/wp-content/themes/Anthurium/assets/images/real-estate-properties.png"
+    img: "https://www.sundreamgroup.com/wp-content/themes/Anthurium/assets/images/real-estate-properties.png",
+    link: "/project1"
   },
   {
     name: "Greater Noida",
-    img: "https://www.gaurcity2.com/blogs/wp-content/uploads/2021/08/flats-2.png"
+    img: "https://www.gaurcity2.com/blogs/wp-content/uploads/2021/08/flats-2.png",
+    link: "/project2"
   },
   {
     name: "Greater Noida  West",
-    img: "https://www.prefeaconsultants.com/images/nirala-india/IMG_2978.jpeg"
+    img: "https://www.prefeaconsultants.com/images/nirala-india/IMG_2978.jpeg",
+    link: "/project3"
   }
 ];
 
@@ -27,7 +32,7 @@ const Popular = () => {
       <div className="popular-container">
 
         {popularData.map((item, index) => (
-          <div className="popular-card" key={index}>
+           <Link to={item.link} key={index} className="popular-card">
 
             {/* IMAGE */}
             <div className="card-img">
@@ -38,8 +43,7 @@ const Popular = () => {
             <div className="card-content"> 
               <h3>{item.name}</h3>
             </div>
-
-          </div>
+             </Link>
         ))}
 
       </div>
