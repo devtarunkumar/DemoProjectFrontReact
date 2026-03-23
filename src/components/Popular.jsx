@@ -20,7 +20,7 @@ const Popular = () => {
     <section className="popular-1">
 
       <h2 className="section-title">
-        <span>Popular</span> Places
+        <span className="PP">Popular</span> Places
       </h2> <br /> <br />
       <p>Properties In Most Popular Places.</p>
 

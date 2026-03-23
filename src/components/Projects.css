@@ -124,21 +124,21 @@
 }
 
 .enquiry-btn {
-  background: #25D366;
+  background: #4ab471;
   color: #fff;
 }
 
 .enquiry-btn:hover {
-  background: #1ebe57;
+  background: #0b6e2e;
 }
 
 .details-btn {
-  background: #ff6600;
+  background: #D8B872;
   color: #fff;
 }
 
 .details-btn:hover {
-  background: #ff4500;
+  background: #ddaa3c;
   transform: translateY(-2px);
 }
 

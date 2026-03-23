@@ -38,7 +38,7 @@ const Navbar = () => {
       <div className="nav-btn">
         <a href="tel:+919911093426">
           <button>
-            <FontAwesomeIcon icon={faPhone} /> 99110-93426
+            <FontAwesomeIcon icon={faPhone} /> 70421 92802
           </button>
         </a>
       </div>

@@ -98,7 +98,7 @@ return(
 
  {/* WhatsApp Icon */}
             <a
-                href="https://wa.me/919911093426"
+                href="https://wa.me/917042192802"
                 className="whatsapp-btn"
                 target="_blank"
             >
@@ -113,4 +113,4 @@ return(
 
 }
 
-export default FAQ
+export default FAQ;

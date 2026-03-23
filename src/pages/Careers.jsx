@@ -46,7 +46,7 @@ const Careers = () => {
               Our legacy is built on trust, transparency, and unwavering dedication to helping clients achieve their property goals.
             </p>
             <a
-              href="https://wa.me/919911093426"
+              href="https://wa.me/917042192802"
               className="whatsapp-btn"
               target="_blank"
               rel="noreferrer"

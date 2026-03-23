@@ -36,7 +36,7 @@ const Contact = () => {
                     {/* LEFT SIDE - FORM */}
                     <div className="form-container">
 
-                        <h2>Send Us a Message</h2>
+                        <h2>CONTACT US</h2>
 
                         <form>
                             <input type="text" placeholder="Your Name" required />
@@ -60,14 +60,14 @@ const Contact = () => {
 
                         <div className="contact-overlay">
 
-                            <h3>Contact Details</h3>
+                            <h3>CONTACT DETAILS</h3>
 
                             <p className="overlay-sub">
                                 Please find below contact details and contact us today!
                             </p>
 
                             <p>📍 GH-04 B Sector -12, Greater Noida West -201318</p>
-                            <p>📞 +91  99110-93426</p>
+                            <p>📞 +91  70421 92802</p>
                             <p>✉️ grownestrealty@gmail.com</p>
                             <p>⏰ 8:00 a.m - 9:00 p.m</p>
 
@@ -110,7 +110,7 @@ const Contact = () => {
 
             {/* WhatsApp Icon */}
             <a
-                href="https://wa.me/919911093426"
+                href="https://wa.me/917042192802"
                 className="whatsapp-btn"
                 target="_blank"
             >

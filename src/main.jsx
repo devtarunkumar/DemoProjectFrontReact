@@ -22,6 +22,9 @@ import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import ProjectDetails from "./components/ProjectDetails";
+import ScrollToTop from "./components/ScrollToTop";
+
 const Home = () => {
   return (
     <>
@@ -41,7 +44,7 @@ const Home = () => {
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router>
-
+      <ScrollToTop />
       <Routes>
 
 
@@ -52,6 +55,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/careers" element={<Careers />} />
         <Route path="/team" element={<OurTeam />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/:slug" element={<ProjectDetails />} />
         <Route path="/project1" element={<Project1 />} />
         <Route path="/project2" element={<Project2 />} />
         <Route path="/project3" element={<Project3 />} />

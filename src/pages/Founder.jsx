@@ -1,5 +1,4 @@
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import ScrollTopButton from "../components/ScrollTopButton";
 import { FaWhatsapp, FaHome, FaList, FaUsers, FaTrophy } from "react-icons/fa";
 import WhyChooseUs from "../components/WhyChooseUs";
@@ -95,7 +94,7 @@ const Founder = () => {
         <div className="about-hero-content">
           <h1>ABOUT OUR FOUNDER</h1>
           <p className="breadcrumb">
-            <Link to="/">Home</Link> / <span>About</span>
+            <Link to="/">Home</Link> / <span>ABOUT OUR FOUNDER</span>
           </p>
         </div>
       </section>
@@ -129,7 +128,7 @@ const Founder = () => {
 
       {/* WhatsApp Icon */}
       <a
-        href="https://wa.me/919911093426"
+        href="https://wa.me/917042192802"
         className="whatsapp-btn"
         target="_blank"
         rel="noreferrer"

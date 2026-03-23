@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { FaArrowUp } from "react-icons/fa";
+import { useLocation } from "react-router-dom";
 import "./ScrollTopButton.css";
 
 const ScrollTopButton = () => {

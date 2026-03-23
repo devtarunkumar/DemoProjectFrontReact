@@ -23,92 +23,117 @@
 
 
 /* =====================
-   CONTACT FORM
+   CONTACT SECTION
 ===================== */
 
-.contact-form-section{
-padding:100px 80px;
-background:white;
+.contact-form-section {
+  padding: 100px 80px;
+  background: #f8f9fb;
 }
 
-.form-container{
-max-width:700px;
-margin:auto;
-text-align:center;
-}
-
-.form-container h2{
-margin-bottom:30px;
-font-size:32px;
-}
-
-form{
-display:flex;
-flex-direction:column;
-gap:15px;
-}
-
-form input,
-form textarea{
-padding:14px;
-border-radius:6px;
-border:1px solid #ddd;
-font-size:15px;
-font-family:inherit;
-}
-
-form textarea{
-resize:none;
-min-height:120px;
-}
-
-form input:focus,
-form textarea:focus{
-outline:none;
-border-color:#ff6600;
-}
-
-/* button */
-
-form button{
-padding:14px;
-background:#ff6600;
-border:none;
-color:white;
-font-size:16px;
-border-radius:6px;
-cursor:pointer;
-transition:0.3s;
-}
-
-form button:hover{
-background:#ff4500;
-transform:translateY(-2px);
-}
 
 /* =========================
-WRAPPER
+WRAPPER (60 / 40 LAYOUT)
 ========================= */
 
 .contact-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  max-width: 1200px;
+  grid-template-columns: 60% 40%;   /* ⭐ MAIN CHANGE */
+  gap: 50px;
+  max-width: 1250px;
   margin: auto;
   align-items: stretch;
 }
 
+
 /* =========================
-FORM SIDE
+FORM SIDE (PREMIUM CARD)
 ========================= */
 
 .form-container {
-  background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  background: white;
+  padding: 45px;
+  border-radius: 16px;
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.08);
+
+  text-align: left;
+  transition: 0.4s;
 }
+
+.form-container:hover {
+  transform: translateY(-5px);
+}
+
+.form-container h2 {
+  font-size: 34px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #1b1b1b;
+}
+
+
+/* =========================
+FORM
+========================= */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* INPUT STYLE */
+
+form input,
+form textarea {
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #e3e3e3;
+  font-size: 15px;
+  font-family: inherit;
+  background: #fafafa;
+
+  transition: all 0.3s ease;
+}
+
+/* PREMIUM FOCUS EFFECT */
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #D8B872;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(216,184,114,0.2);
+}
+
+form textarea {
+  resize: none;
+  min-height: 130px;
+}
+
+
+/* BUTTON */
+
+form button {
+  padding: 16px;
+  background: linear-gradient(135deg,#D8B872,#b8964e);
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: .5px;
+  transition: 0.35s;
+}
+
+form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(216,184,114,0.4);
+}
+
 
 /* =========================
 IMAGE SIDE
@@ -116,61 +141,72 @@ IMAGE SIDE
 
 .contact-image-box {
   position: relative;
-  width: 100%;
-  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 .contact-image-box img {
   width: 100%;
   height: 100%;
-  min-height: 500px;
-  border-radius: 10px;
+  min-height: 520px;
   object-fit: cover;
+  transition: 0.6s ease;
 }
 
+.contact-image-box:hover img {
+  transform: scale(1.05);
+}
+
+
 /* =========================
-OVERLAY TEXT
+OVERLAY (PREMIUM GLASS LOOK)
 ========================= */
 
 .contact-overlay {
-  position: absolute;   /* ✅ FIXED */
+  position: absolute;
   inset: 0;
 
-  background: linear-gradient(
-    135deg,
-    rgba(79, 38, 224, 0.75),
-    rgba(72, 53, 240, 0.65)
-  );
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0,0,0,0.75),
+      rgba(216,184,114,0.65)
+    );
 
   color: white;
-  padding: 45px 40px;
-  border-radius: 10px;
+  padding: 55px 45px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+
 /* HEADING */
+
 .contact-overlay h3 {
-  font-size: 2.1rem;
+  font-size: 2.2rem;
   font-weight: 700;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
+
 
 /* SUBTITLE */
+
 .overlay-sub {
-  font-size: 0.95rem;
-  margin-bottom: 25px;
-  color: white; 
-  line-height: 1.6;
+  font-size: 15px;
+  margin-bottom: 30px;
+  line-height: 1.7;
+  opacity: 0.9;
 }
 
-/* CONTACT TEXT */
+
+/* CONTACT DETAILS */
+
 .contact-overlay p {
   font-size: 16px;
-  line-height: 2.4;
-  margin-bottom: 12px;
+  line-height: 2.2;
+  margin-bottom: 14px;
   padding-left: 18px;
   position: relative;
 }
@@ -179,13 +215,69 @@ OVERLAY TEXT
   content: "";
   position: absolute;
   left: 0;
-  top: 8px;
+  top: 9px;
   width: 4px;
   height: 14px;
-  background: #043a7c;
-  border-radius: 2px;
+  background: #D8B872;
+  border-radius: 3px;
 }
 
+
+/* =========================
+TABLET RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+
+  .contact-form-section {
+    padding: 80px 40px;
+  }
+
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-image-box img {
+    min-height: 420px;
+  }
+}
+
+
+/* =========================
+MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 576px) {
+
+  .contact-form-section {
+    padding: 60px 18px;
+  }
+
+  .form-container {
+    padding: 28px 20px;
+  }
+
+  .form-container h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  form input,
+  form textarea {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .contact-overlay {
+    padding: 35px 25px;
+  }
+
+  .contact-overlay h3 {
+    font-size: 1.7rem;
+  }
+
+}
 /* =====================
    MAP
 ===================== */

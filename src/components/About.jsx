@@ -86,7 +86,7 @@ const About = () => {
                     <h1>ABOUT OUR COMPANY</h1>
 
                     <p className="breadcrumb">
-                        <Link to="/">Home</Link> / <span>About</span>
+                        <Link to="/">Home</Link> / <span>ABOUT OUR COMPANY</span>
                     </p>
                 </div>
             </section>
@@ -117,7 +117,7 @@ const About = () => {
 
             {/* WhatsApp */}
             <a
-                href="https://wa.me/919911093426"
+                href="https://wa.me/917042192802"
                 className="whatsapp-btn"
                 target="_blank"
             >

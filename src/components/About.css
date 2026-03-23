@@ -67,6 +67,7 @@
     position: relative;
     display: inline-block;
     text-decoration: none;
+    font-size: 25px;
     /* remove default underline */
 }
 
@@ -84,6 +85,7 @@
 span {
     color: #D8B872;
     margin-left: 10px;
+    font-size: 30px;
 }
 
 .about-content p {
@@ -281,6 +283,7 @@ span {
 
 .breadcrumb span {
     color: #ddd;
+    font-size: 17px;
 }
 
 @media (max-width: 768px) {

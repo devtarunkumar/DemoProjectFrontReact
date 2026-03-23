@@ -240,9 +240,50 @@ RESPONSIVE
 }
 
 /* =====================
+   DEFAULT (DESKTOP ≥1025px)
+===================== */
+
+.stats-section {
+  padding: 100px 80px;
+}
+
+.stats-container {
+  display: grid;
+
+  /* AUTO RESPONSIVE */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.stat-box {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.stat-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.stat-box h2 {
+  font-size: 32px;
+}
+
+.stat-box p {
+  font-size: 16px;
+}
+
+
+/* =====================
    TABLET (≤1024px)
 ===================== */
+
 @media (max-width: 1024px) {
+
   .stats-section {
     padding: 80px 40px;
   }
@@ -253,7 +294,7 @@ RESPONSIVE
   }
 
   .stat-icon {
-    font-size: 32px;
+    font-size: 34px;
   }
 
   .stat-box h2 {
@@ -261,21 +302,32 @@ RESPONSIVE
   }
 }
 
+
 /* =====================
    MOBILE (≤768px)
 ===================== */
+
 @media (max-width: 768px) {
+
+  /* ❌ padding: 60px px (ERROR) */
   .stats-section {
-    padding: 60px px;
+    padding: 60px 20px;
   }
 
+  /* ✅ Always keep GRID (don't switch to flex) */
   .stats-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 per row */
-    gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .stat-box {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
   }
 
   .stat-icon {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .stat-box h2 {
@@ -287,16 +339,24 @@ RESPONSIVE
   }
 }
 
+
 /* =====================
    SMALL MOBILE (≤480px)
 ===================== */
+
 @media (max-width: 480px) {
-  .stats-overlay {
-    padding: 40px 10px;
+
+  .stats-section {
+    padding: 40px 15px;
   }
 
   .stats-container {
-    grid-template-columns: 1fr; /* 1 per row */
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .stat-box {
+    padding: 22px 15px;
   }
 
   .stat-icon {

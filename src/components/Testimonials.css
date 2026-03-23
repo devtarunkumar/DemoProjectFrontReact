@@ -5,7 +5,10 @@
   background:#f3f4f6;   /* 👈 light grey like image */
   text-align:center;
 }
-    /* heading */
+  
+.testimonials span{
+    font-size: 30px;
+}
 
 
  
