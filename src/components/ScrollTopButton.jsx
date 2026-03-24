@@ -1,27 +1,34 @@
 import { useState, useEffect } from "react";
 import { FaArrowUp } from "react-icons/fa";
-import { useLocation } from "react-router-dom";
 import "./ScrollTopButton.css";
 
 const ScrollTopButton = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const toggleVisible = () => {
-      setVisible(window.scrollY > 150);
+    let ticking = false;
+
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setVisible(window.scrollY > 200); // thoda better threshold
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
 
-    window.addEventListener("scroll", toggleVisible);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", toggleVisible);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: "smooth", // ✅ yaha smooth sahi hai
     });
   };
 

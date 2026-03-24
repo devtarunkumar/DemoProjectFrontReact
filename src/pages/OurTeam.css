@@ -20,34 +20,35 @@
 .about-hero-content .breadcrumb {
   color: #fff;
 }
+
 /* dark overlay */
 
-.team-hero::before{
-content:"";
-position:absolute;
-inset:0;
-background:rgba(0,0,0,0.6);
+.team-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 /* content */
 
-.team-hero-content{
-position:relative;
-z-index:2;
-color:white;
-max-width:700px;
+.team-hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: 700px;
 }
 
-.team-hero-content h1{
-font-size:46px;
-margin-bottom:15px;
-font-weight:700;
+.team-hero-content h1 {
+  font-size: 46px;
+  margin-bottom: 15px;
+  font-weight: 700;
 }
 
-.team-hero-content p{
-font-size:17px;
-line-height:1.7;
-color:#ddd;
+.team-hero-content p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #ddd;
 }
 
 /* =========================
@@ -60,14 +61,20 @@ TEAM INTRO SECTION
   display: flex;
   justify-content: center;
 }
-.Ex{
-   color: rgb(241, 43, 76);
-   font-weight: bolder;
+
+.Ex {
+  color: rgb(241, 43, 76);
+  font-weight: bolder;
+  font-size: 25px;
 }
-.Ft{
-   color: #cfae6c;
-   font-weight:400;
+
+.Ft {
+  color: #cfae6c;
+  font-weight: 400;
+  font-size: 25px;
+
 }
+
 /* LEFT BORDER STYLE */
 
 .Heads2 {
@@ -93,7 +100,7 @@ TEAM INTRO SECTION
   margin-bottom: 10px;
   position: relative;
   display: inline-block;
-  
+
 }
 
 /* underline */
@@ -128,13 +135,15 @@ TEAM INTRO SECTION
   color: #555;
   line-height: 1.8;
   margin-bottom: 20px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-.Gr{
-   color: #444444;
-   font-weight: bolder;
-   font-size: 20px;
+
+.Gr {
+  color: #444444;
+  font-weight: bolder;
+  font-size: 20px;
 }
+
 /* =========================
 RESPONSIVE
 ========================= */
@@ -152,19 +161,20 @@ RESPONSIVE
     font-size: 0.95rem;
   }
 }
+
 /* =====================
    TABLET RESPONSIVE
 ===================== */
 
-@media (max-width:1024px){
+@media (max-width:1024px) {
 
-.team-hero{
-height:350px;
-}
+  .team-hero {
+    height: 350px;
+  }
 
-.team-hero-content h1{
-font-size:36px;
-}
+  .team-hero-content h1 {
+    font-size: 36px;
+  }
 
 }
 
@@ -173,18 +183,18 @@ font-size:36px;
    MOBILE RESPONSIVE
 ===================== */
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
-.team-hero{
-height:260px;
-}
+  .team-hero {
+    height: 260px;
+  }
 
-.team-hero-content h1{
-font-size:26px;
-}
+  .team-hero-content h1 {
+    font-size: 26px;
+  }
 
-.team-hero-content p{
-font-size:15px;
-}
+  .team-hero-content p {
+    font-size: 15px;
+  }
 
 }
