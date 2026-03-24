@@ -85,7 +85,6 @@
 span {
     color: #D8B872;
     margin-left: 10px;
-    font-size: 30px;
 }
 
 .about-content p {
@@ -95,7 +94,9 @@ span {
     font-size: 15px;
     font-family: sans-serif;
 }
-
+.about-content span{
+    font-size: 28px;
+}
 
 /* MISSION VISION */
 
@@ -189,6 +190,7 @@ span {
 
 .test-title span {
   color: #e63946;
+  font-size: 25px;
 }
 
 .test-subtitle {
@@ -230,6 +232,9 @@ span {
   background: #e63946;
   opacity: 1;
 }
+.breadcrumb span{
+    font-size: 15px;
+}
 
 @media (max-width:768px) {
 
@@ -259,6 +264,7 @@ span {
     .about-content h2 {
         font-size: 28px;
     }
+  
 
 }
 
@@ -283,22 +289,30 @@ span {
 
 .breadcrumb span {
     color: #ddd;
-    font-size: 17px;
 }
 
 @media (max-width: 768px) {
 
-    .stats-container {
-        flex-direction: column;
-        gap: 40px;
-    }
+  .stats-container {
+    flex-direction: column;  
+    align-items: center;
+    height: auto;             
+    gap: 30px;
+  }
 
-    .stat-box h2 {
-        font-size: 26px;
-    }
+  .stat-box {
+    width: 100%;              
+    max-width: 300px;         
+  }
 
-    .stat-icon {
-        font-size: 32px;
-    }
+  .stat-box h2 {
+    font-size: 26px;
+  }
 
+  .stat-icon {
+    font-size: 32px;
+  }
+  .about-content span{
+    font-size: 22px;
+}
 }

@@ -84,7 +84,7 @@ const Footer = () => {
               <li><Link to="/projects/godrej-majesty">Godrej Properties</Link></li>
               <li><Link to="/projects/mahagun-mylagoon">Mahagun Mylagoon</Link></li>
               <li><Link to="/projects/arihant-adobe">Arihant Abode</Link></li>
-              <li><Link to="/projects/fusion-brook-rivulet">Fusion Brook n Rivulet</Link></li>
+              <li><Link to="/projects/fusion-brook">Fusion Brook n Rivulet</Link></li>
               <li><Link to="/projects/aign-royal">AIGN Royal</Link></li>
               <li><Link to="/projects/civitech-strings">Civitech Strings</Link></li>
               <li><Link to="/projects/hawelia">Hawelia</Link></li>

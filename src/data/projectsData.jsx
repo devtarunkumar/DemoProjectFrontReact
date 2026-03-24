@@ -9,9 +9,9 @@ export const projects = [
     img: "/Arihant 1.webp",
 
     gallery: [
-      "/Arihant 1.webp",
-      "/Arihant 2.webp",
-      "/Arihant 3.jpg"
+      "/f23.webp",
+      "/f24.jpg",
+      "/f25.jpg"
     ],
 
     description:
@@ -168,7 +168,11 @@ export const projects = [
     price: "Starting from Rs. XX Lakhs",
     rera: "UPRERAPRJZZZZZZ",
     img: "/Mahagun 1.jpg.jpeg",
-    gallery: ["/Mahagun 1.jpg.jpeg"],
+     gallery: [
+      "/f20.jpg",
+      "/f21.jpg",
+      "/f22.jpg"
+    ],
     description: "Have you ever imagined your home as a permanent vacation spot? Not just for days, weeks or months, but for a lifetime. The Project embodies this dream, providing a vacation-like atmosphere every single day without compromising on the luxury you deserve. Nestled within approx. 7.41 acres (30,000 sq. m.) of prime land in Greater Noida West’s prestigious Sector 12. This address offers carefully curated experiences designed to bring serenity and unveil new expressions waiting to be discovered.",
     projectOverview: [
       
@@ -325,7 +329,11 @@ otherFeatures: [
     price: "Starting from Rs. XX Lakhs",
     rera: "UPRERAPRJYYYYYY",
     img: "Godrej.jfif",
-    gallery: ["Godrej.jfif"],
+     gallery: [
+      "/f17.jpg",
+      "/f18.jpeg",
+      "/f19.jpg"
+    ],
     description: "Godrej Majesty is a thoughtfully designed ultra-luxury residential project that blends elegance with comfort, offering an exceptional living experience in a secure and nature-rich environment. Pedestrian-friendly spaces ensure utmost safety and comfort, especially for children and senior citizens, encouraging healthy outdoor activity and fostering community interaction. A 60-feet wide, lush landscaped entry road creates a grand and majestic welcome for residents and visitors, setting the tone for refined living.",
 
 projectOverview: [
@@ -491,7 +499,11 @@ otherFeatures: [
     price: "Starting from Rs. XX Lakhs",
     rera: "UPRERAPRJYYYYYY",
     img: "/Aigin 2.jpg.jpeg",
-    gallery: ["/Aigin 2.jpg.jpeg"],
+     gallery: [
+      "/f29.jpg",
+      "/f30.jpg",
+      "/f31.jpg"
+    ],
     description: "AIGIN Royal is a premium residential development by AIGIN Group, strategically located in Sector 12, Greater Noida West. Spanning over 4 acres, the project comprises 7 towers with 19 floors each, offering a total of 616 units. The development features spacious 2, 3, and 5 BHK apartments, including luxurious duplexes, designed to provide a blend of comfort and modern living.",
 
 projectOverview: [
@@ -574,7 +586,11 @@ otherFeatures: [
     price: "Starting from Rs. XX Lakhs",
     rera: "UPRERAPRJYYYYYY",
     img: "/Hawelia 1.jpg.jpeg",
-    gallery: ["/Hawelia 1.jpg.jpeg"],
+     gallery: [
+      "/f36.webp",
+      "/f37.jpg",
+      "/f38.jpg"
+    ],
     description: "Discover Hawelia, an exquisite residential community in Sector 1, Greater Noida West, offering a perfect fusion of luxury, convenience, and value. Developed with a vision to provide modern, spacious, and secure homes, Hawelia stands as a symbol of trust, elegance, and thoughtful living.",
 
 projectOverview: [
@@ -823,7 +839,11 @@ otherFeatures: [
     price: "Starting from Rs. XX Lakhs",
     rera: "UPRERAPRJZZZZZZ",
     img: "Arihant 3.jpg",
-    gallery: ["Arihant 3.jpg"],
+     gallery: [
+      "/f10.jpeg",
+      "/f11.jpg",
+      "/f12.jpeg"
+    ],
     description: "Gaursons India Pvt. Ltd., a name synonymous with quality construction and timely delivery, has joined hands with NBCC (National Buildings Construction Corporation Limited), a Navratna CPSE under the Ministry of Housing and Urban Affairs, to redefine urban development in India. This strategic collaboration brings together Gaursons’ deep expertise in residential and commercial real estate with NBCC’s unmatched legacy in executing government and large-scale infrastructure projects, setting new benchmarks in transparency, innovation, and sustainability in real estate.",
 
 projectOverview: [
@@ -906,7 +926,11 @@ otherFeatures: [
     price: "Starting from Rs. XX Lakhs",
     rera: "UPRERAPRJZZZZZZ",
     img: "Gaurs 2.jpeg",
-    gallery: ["Gaurs 2.jpeg"],
+     gallery: [
+      "/f39.jpg",
+      "/f40.webp",
+      "/f41.jpg"
+    ],
     description: "Gaursons at Jaypee Greens – Luxury Living at the Heart of Greater Noida. An Address That Commands Prestige. A Lifestyle That Inspires. Experience elevated urban living with Gaursons’ premium development at Jaypee Greens, Pari Chowk, Greater Noida. Located in one of the city’s most prestigious and greenest addresses, this project offers a perfect blend of luxury, serenity, and connectivity.",
 
 projectOverview: [
@@ -980,7 +1004,11 @@ otherFeatures: [
     price: "Starting from Rs. XX Lakhs",
     rera: "UPRERAPRJYYYYYY",
     img: "/Eldeco Group4.jpg.jpeg",
-    gallery: ["/Eldeco Group4.jpg.jpeg"],
+     gallery: [
+      "/f1.png",
+      "/f2.png",
+      "/f3.jpg"
+    ],
     description: "What if you could live surrounded by the greens? Wake up every morning to be greeted by fresh, crisp air, and end your day witnessing the sun go down over the open greens? What if the myriad shades of green unfolded opportunities to savour life in a way like never before, as you live, grow, play and socialize? Welcome to Eldeco Live By The Greens. Located in Sports City at Sector-150, Noida, this sprawling project offers numerous recreational & sporting facilities, a large clubhouse with modern amenities, acres of greens, and a mesmerizing river view.",
 
 projectOverview: [
@@ -1060,7 +1088,11 @@ otherFeatures: [
     price: "Starting from Rs. XX Lakhs",
     rera: "UPRERAPRJYYYYYY",
     img: "/Nirala Estate 2.jpg.jpeg",
-    gallery: ["/Nirala Estate 2.jpg.jpeg"],
+     gallery: [
+      "/f4.jpg",
+      "/f5.jpg",
+      "/f6.jpg"
+    ],
     description: "Nirala World brings to life a lifestyle that blends modernity, comfort, and affordability in the heart of techzone. With a strong legacy of delivering quality residential projects, Nirala World offers thoughtfully designed homes crafted for urban living at its best.",
 
 projectOverview: [
@@ -1143,7 +1175,11 @@ otherFeatures: [
     price: "Starting from Rs. XX Lakhs",
     rera: "UPRERAPRJ186008",
     img: "/SKA Orion4.webp",
-    gallery: ["/SKA Orion4.webp"],
+     gallery: [
+      "/f7.webp",
+      "/f8.webp",
+      "/f9.jpg"
+    ],
    description: "Welcome to SKA Orion, a premium residential project by SKA Group, perfectly located at GH-01A/2, Sector 143B, Noida. Designed to offer a modern, elegant, and peaceful lifestyle, SKA Orion is a shining example of architectural brilliance and sustainable living in one of Noida’s most sought-after sectors. Whether you're looking for your dream home or a high-value investment, SKA Orion promises unmatched comfort, style, and connectivity.",
 
 projectOverview: [
@@ -1207,5 +1243,334 @@ otherFeatures: [
   "Internal roads with paving and street lights",
   "Wi-Fi connectivity in common areas"
 ]
-  }
+  },
+  {
+  slug: "sobha",
+  title: "Sobha",
+  location: "Sector 36, Greater Noida",
+
+  gallery: [
+    "/f13.jpg",
+    "/f14.jpg",
+    "/f16.jpg"
+  ],
+
+  description: "Presenting a new benchmark in premium living – Sobha's prestigious development in Sector 36, Greater Noida. Known for uncompromising quality, world-class engineering, and timeless design, Sobha brings its legacy of excellence to one of NCR’s most promising growth corridors. This upcoming residential community offers a serene environment, premium amenities, and unmatched craftsmanship – a combination that defines the Sobha way of life.",
+
+  projectOverview: [
+    "Project Name: Sobha",
+    "Location: Sector 36, Greater Noida",
+    "Developer: Sobha Limited",
+    "Project Type: Ultra-luxury residential apartments",
+    "Total Land Area: Approximately 8.5 acres",
+    "Number of Towers: 7 high-rise towers",
+    "Floors per Tower: G+34",
+    "Total Units: Approximately 777 apartments",
+    "RERA Registration: UPRERAPRJ250823",
+    "Launch Date: April 2025",
+    "Expected Possession: February 2030"
+  ],
+
+  floorPlans: [
+    "2 BHK: 1255–1355 sq. ft.",
+    "3 BHK: 1550–1650 sq. ft.",
+    "3 BHK + Servant Room: 2300–2400 sq. ft.",
+    "4 BHK + Servant Room: 2800–3000 sq. ft."
+  ],
+
+  //  IMPORTANT (ye tu missing bol raha tha pehle)
+  masterPlan: [
+    "European-themed residential community",
+    "Approximately 4.5 acres of green/open spaces",
+    "Landscaped gardens and pedestrian-friendly zones",
+    "Eco-friendly design with rainwater harvesting",
+    "Secure gated community with CCTV & 24/7 security"
+  ],
+
+  locationAdvantages: [
+    "5 mins from upcoming metro station",
+    "12 km from Sector 52 Metro Station",
+    "10 mins to FNG Expressway & NH-24",
+    "Close to Gaur Chowk (~5 km)",
+    "Jewar Airport connectivity (~50 km)",
+    "Fortis Hospital – 10 mins",
+    "Ryan International School – ~2 km",
+    "Gaur City Mall – ~3.5 km",
+    "Sector 62 IT Hub – 10 mins"
+  ],
+
+  amenities: [
+    "50,000 sq. ft. clubhouse",
+    "Swimming pool & kids pool",
+    "Gym & fitness center",
+    "Yoga & meditation zone",
+    "Spa, sauna & Jacuzzi",
+    "Badminton & basketball courts",
+    "Mini football field",
+    "Jogging & cycling tracks",
+    "Amphitheatre",
+    "Kids play area & senior citizen garden",
+    "Indoor games & library"
+  ],
+
+  otherFeatures: [
+    "Car-free pedestrian zones",
+    "60-ft wide grand entry boulevard",
+    "100+ ft iconic gate",
+    "Wide internal roads",
+    "Visitor parking",
+    "Fire safety systems",
+    "Rainwater harvesting",
+    "24x7 water supply",
+    "Sewage treatment plant (STP)"
+  ]
+},
+{
+  slug: "vvip",
+  title: "VVIP Addresses",
+  location: "Sector 12, Greater Noida West",
+
+  gallery: [
+    "/vvip1.jpg",
+    "/vvip2.jpg",
+    "/vvip3.jpg"
+  ],
+
+  description: "Welcome to VVIP Addresses, a premium residential enclave located in the heart of Sector 12, Greater Noida West. Thoughtfully designed to blend modern architecture with functional elegance, this landmark development offers a sophisticated lifestyle that caters to both comfort and convenience.",
+
+  projectOverview: [
+    "Project Name: VVIP Addresses",
+    "Location: Sector 12, Greater Noida West",
+    "Developer: VVIP Group",
+    "Project Type: Ultra-luxury residential apartments",
+    "Total Land Area: Approximately 8.5 acres",
+    "Number of Towers: 7 high-rise towers",
+    "Floors per Tower: G+34",
+    "Total Units: Approximately 777 apartments",
+    "RERA Registration: UPRERAPRJ250823",
+    "Launch Date: April 2025",
+    "Expected Possession: February 2030"
+  ],
+
+  floorPlans: [
+    "2 BHK: 1255–1355 sq. ft.",
+    "3 BHK: 1550–1650 sq. ft.",
+    "3 BHK + Servant Room: 2300–2400 sq. ft.",
+    "4 BHK + Servant Room: 2800–3000 sq. ft."
+  ],
+
+  masterPlan: [
+    "European-themed residential community",
+    "Approximately 4.5 acres of green/open spaces",
+    "Landscaped gardens and pedestrian-friendly zones",
+    "Eco-friendly design with rainwater harvesting and energy-efficient systems",
+    "Secure gated community with 24/7 security and CCTV surveillance"
+  ],
+
+  locationAdvantages: [
+    "5 mins from upcoming metro station",
+    "12 km from Sector 52 Metro Station",
+    "10 mins to FNG Expressway & NH-24",
+    "Close to Gaur Chowk (~5 km)",
+    "Jewar Airport connectivity (~50 km)",
+    "Fortis Hospital – 10 mins",
+    "Yatharth Hospital – ~4 km",
+    "Ryan International School – ~2 km",
+    "GD Goenka School – ~2.5 km",
+    "Gaur City Mall – ~3.5 km",
+    "Sector 62 IT Hub – 10 mins"
+  ],
+
+  amenities: [
+    "50,000 sq. ft. clubhouse",
+    "Swimming pool & kids pool",
+    "Poolside cabanas",
+    "Gym & fitness center",
+    "Yoga & meditation zone",
+    "Spa, sauna & Jacuzzi",
+    "Badminton & basketball courts",
+    "Mini football field",
+    "Jogging & cycling tracks",
+    "Amphitheatre",
+    "Kids play area & senior citizen garden",
+    "Indoor games & library"
+  ],
+
+  otherFeatures: [
+    "Car-free pedestrian zones",
+    "60-ft wide grand entry boulevard",
+    "100+ ft iconic gate",
+    "Wide internal roads",
+    "Drop-off zones with valet",
+    "Visitor parking",
+    "Fire safety systems",
+    "Rainwater harvesting",
+    "24x7 water supply",
+    "Sewage treatment plant (STP)"
+  ]
+},
+{
+  slug: "civitech-strings",
+  title: "Civitech Strings",
+  location: "Sector 12, Greater Noida West",
+
+  gallery: [
+    "/f32.jpg",
+    "/f33.jpg",
+    "/f34.jpg"
+  ],
+
+  description: "Civitech Strings is an upcoming premium residential development in Sector 12, Greater Noida West, offering thoughtfully designed 2 and 3 BHK apartments. Spread across 5 acres, the project blends modern living with natural serenity—featuring 60% open green spaces, landscaped gardens, and wide internal roads. With advanced Korean construction technology, three-side open apartments, and excellent connectivity, it is ideal for both end-users and investors.",
+
+  projectOverview: [
+    "Project Name: Civitech Strings",
+    "Location: Sector 12, Greater Noida West",
+    "Developer: Civitech Developers",
+    "Project Type: Residential Apartments",
+    "Total Land Area: Approximately 5 acres",
+    "Number of Towers: 4",
+    "Floors per Tower: 27",
+    "Total Units: Approximately 838",
+    "RERA Registration: UPRERAPRJ646272",
+    "Project Status: Under Construction",
+    "Expected Possession: September 2027"
+  ],
+
+  floorPlans: [
+    "2 BHK: 1090 sq. ft. | Starting from ₹61 Lakhs*",
+    "3 BHK: 1250–1275 sq. ft. | Starting from ₹70–72 Lakhs*"
+  ],
+
+  masterPlan: [
+    "60% open green spaces with landscaped gardens",
+    "Modern clubhouse with indoor games & gym",
+    "Double-height entrance lobby",
+    "Korean construction technology",
+    "Rainwater harvesting & sewage treatment plant",
+    "Three-side open apartments for ventilation"
+  ],
+
+  locationAdvantages: [
+    "130m wide road adjacent to project",
+    "Sector-12 Metro Station – 1.7 km",
+    "GT Road – 10 km",
+    "NH-24 & Noida Expressway connectivity",
+    "The Infinity School – 3.7 km",
+    "Shri Ram Global School – 3.4 km",
+    "Jaipuria School – 2.6 km",
+    "Yatharth Hospital – 7.5 km",
+    "Fortis Hospital – 15 km",
+    "Gaur City Mall – 6.5 km",
+    "Aditya Mall – 8 km",
+    "Shipra Mall – 10 km"
+  ],
+
+  amenities: [
+    "Swimming pool & toddler pool",
+    "Clubhouse with indoor games",
+    "Gym & fitness center",
+    "Yoga & meditation center",
+    "Amphitheatre & flower garden",
+    "Jogging & cycling track",
+    "Basketball & badminton courts",
+    "Mini football field & cricket pitch",
+    "Skating rink",
+    "Children play area & senior zone"
+  ],
+
+  otherFeatures: [
+    "Double-height entrance lobby",
+    "Shopping complex inside",
+    "Video door security & CCTV",
+    "24x7 gated security",
+    "Fire safety systems",
+    "Rainwater harvesting & STP",
+    "Earthquake-resistant structure",
+    "Garbage disposal system",
+    "24x7 power backup & water supply",
+    "Wi-Fi in common areas"
+  ]
+},
+{
+  slug: "fusion-brook",
+  title: "fusion-brook",
+  location: "Sector 12, Greater Noida West",
+
+  gallery: [
+    "/f26.jpg",
+    "/f27.jpg",
+    "/f28.jpg"
+  ],
+
+  description: "Welcome to Fusion Rivulet, a premium residential project by Fusion Group in Sector 12, Greater Noida West. Designed for modern families, it offers a perfect blend of natural serenity and urban lifestyle with spacious homes, green surroundings, and excellent connectivity.",
+
+  projectOverview: [
+    "Project Name: Fusion Rivulet",
+    "Location: Sector 12, Greater Noida West",
+    "Developer: Fusion Buildtech",
+    "Project Type: Residential Apartments",
+    "Total Land Area: Approximately 5 acres",
+    "Number of Towers: 4",
+    "Floors per Tower: 27",
+    "Total Units: Approximately 838",
+    "RERA Registration: UPRERAPRJ646272",
+    "Project Status: Under Construction",
+    "Expected Possession: September 2027"
+  ],
+
+  floorPlans: [
+    "2 BHK: 1090 sq. ft. | Starting from ₹61 Lakhs*",
+    "3 BHK: 1250–1275 sq. ft. | Starting from ₹70–72 Lakhs*"
+  ],
+
+  masterPlan: [
+    "60% open green spaces with landscaped gardens",
+    "Modern clubhouse with gym & indoor games",
+    "Double-height entrance lobby",
+    "Advanced construction technology",
+    "Rainwater harvesting & sewage treatment plant",
+    "Three-side open apartments for ventilation"
+  ],
+
+  locationAdvantages: [
+    "130m wide road connectivity",
+    "Sector-12 Metro Station – 1.7 km",
+    "GT Road – 10 km",
+    "NH-24 & Noida Expressway access",
+    "The Infinity School – 3.7 km",
+    "Shri Ram Global School – 3.4 km",
+    "Jaipuria School – 2.6 km",
+    "Yatharth Hospital – 7.5 km",
+    "Fortis Hospital – 15 km",
+    "Gaur City Mall – 6.5 km",
+    "Aditya Mall – 8 km",
+    "Shipra Mall – 10 km"
+  ],
+
+  amenities: [
+    "Swimming pool & kids pool",
+    "Clubhouse with indoor games",
+    "Gym & fitness center",
+    "Yoga & meditation zone",
+    "Amphitheatre & garden",
+    "Jogging & cycling track",
+    "Basketball & badminton courts",
+    "Mini football field & cricket pitch",
+    "Skating rink",
+    "Children play area & senior zone"
+  ],
+
+  otherFeatures: [
+    "Double-height entrance lobby",
+    "Shopping complex inside",
+    "Video door security & CCTV",
+    "24x7 gated security",
+    "Fire safety systems",
+    "Rainwater harvesting & STP",
+    "Earthquake-resistant structure",
+    "Garbage disposal system",
+    "24x7 power backup & water supply",
+    "Wi-Fi in common areas"
+  ]
+}
 ];
