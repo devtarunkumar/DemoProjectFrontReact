@@ -11,7 +11,6 @@
     text-align: center;
     position: relative;
 
-
 }
 
 .about-hero::before {
@@ -181,6 +180,7 @@ span {
   background: #f5f5f5;
   padding: 80px 20px;
   text-align: center;
+  
 }
 
 .test-title {
@@ -223,14 +223,22 @@ span {
 }
 
 /* DOTS */
+.swiper {
+  padding-bottom: 40px;   /* niche space create karega */
+}
+
+.swiper-pagination {
+  bottom: 10px !important;
+}
 .swiper-pagination-bullet {
   background: #000;
   opacity: 0.4;
 }
 
 .swiper-pagination-bullet-active {
-  background: #e63946;
+  background: #383334;
   opacity: 1;
+  
 }
 .breadcrumb span{
     font-size: 15px;

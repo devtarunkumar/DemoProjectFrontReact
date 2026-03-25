@@ -70,22 +70,18 @@ const PopularProjects = () => {
               </div>
               <div className="card-content">
                 <h3>{item.title}</h3>
-                <p className="location">📍 {item.location}</p>
+                <p className="location">➤ {item.location}</p>
                 <div className="details">
                   <div className="detail-item">
-                    <span className="ic">🛏</span>
                     <span className="ic">6 Bedrooms</span>
                   </div>
                   <div className="detail-item">
-                    <span className="ic">🛁</span>
                     <span className="ic">3 Bathrooms</span>
                   </div>
                   <div className="detail-item">
-                    <span className="ic">📐</span>
                     <span className="ic">720 sq ft</span>
                   </div>
                   <div className="detail-item">
-                    <span className="ic">🚗</span>
                     <span className="ic">2 Garages</span>
                   </div>
                 </div>
