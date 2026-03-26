@@ -3,8 +3,8 @@ export const projects = [
     slug: "arihant-adobe",
     title: "Arihant Adobe",
     bhk: "2 & 3 BHK Apartments",
-    location: "Sector 10, Greater Noida West",
-    price: "Starting from Rs. XX Lakhs",
+    location: "Location : Sector 10, Greater Noida West",
+    price: "Starting from Rs. 1.03 cr. To 1.30 cr",
     rera: "UPRERAPRJXXXXXX",
     img: "/Arihant 1.webp",
 
@@ -88,7 +88,7 @@ export const projects = [
     slug: "fusion-rivulet",
     title: "Fusion Rivulet",
     bhk: "2 & 3 BHK Apartments",
-    location: "Sector 12, Greater Noida West",
+    location: "Location :Sector 12, Greater Noida West",
     price: "Starting from Rs. XX Lakhs",
     rera: "UPRERAPRJYYYYYY",
     img: "/Fusion 1.jpg.jpeg",
@@ -164,7 +164,7 @@ export const projects = [
     slug: "mahagun-mylagoon",
     title: "Mahagun Mylagoon",
     bhk: "2 & 3 BHK Apartments",
-    location: "Sector 12, Greater Noida West",
+    location: "Location :Sector 12, Greater Noida West",
     price: "Starting from Rs. XX Lakhs",
     rera: "UPRERAPRJZZZZZZ",
     img: "/Mahagun 1.jpg.jpeg",
@@ -249,7 +249,7 @@ export const projects = [
     slug: "civitech",
     title: "Civitech",
     bhk: "2 & 3 BHK Apartments",
-    location: "Sector 1, Noida Extension",
+    location: "Location :Sector 1, Noida Extension",
     price: "Starting from Rs. XX Lakhs",
     rera: "UPRERAPRJYYYYYY",
     img: "/Civitech-1.jpg.jpeg",
@@ -325,7 +325,7 @@ otherFeatures: [
     slug: "godrej-majesty",
     title: "Godrej Majesty",
     bhk: "2 & 3 BHK Apartments",
-    location: "Sector 12, Greater Noida West",
+    location: "Location :Sector 12, Greater Noida West",
     price: "Starting from Rs. XX Lakhs",
     rera: "UPRERAPRJYYYYYY",
     img: "Godrej.jfif",
@@ -412,7 +412,7 @@ otherFeatures: [
     slug: "nirala-world",
     title: "Nirala World",
     bhk: "2 & 3 BHK Apartments",
-    location: "Techzone IV, Noida Extension",
+    location: "Location :Techzone IV, Noida Extension",
     price: "Starting from Rs. XX Lakhs",
     rera: "UPRERAPRJYYYYYY",
     img: "/Nirala Estate 5.jpg",
@@ -495,9 +495,9 @@ otherFeatures: [
     slug: "aign-royal",
     title: "AIGN Royal",
     bhk: "2 & 3 BHK Apartments",
-    location: "Sector 1, Greater Noida West",
-    price: "Starting from Rs. XX Lakhs",
-    rera: "UPRERAPRJYYYYYY",
+    location: "Location :Location : Sector 1, Greater Noida West",
+    price: "Starting from Rs. 1.70 cr",
+    rera: "UPRERAPRJ309036",
     img: "/Aigin 2.jpg.jpeg",
      gallery: [
       "/f29.jpg",
@@ -582,7 +582,7 @@ otherFeatures: [
     slug: "hawelia",
     title: "Hawelia",
     bhk: "2 & 3 BHK Apartments",
-    location: "Sector 1, Greater Noida West",
+    location: "Location :Sector 1, Greater Noida West",
     price: "Starting from Rs. XX Lakhs",
     rera: "UPRERAPRJYYYYYY",
     img: "/Hawelia 1.jpg.jpeg",
@@ -669,7 +669,7 @@ otherFeatures: [
     slug: "crc-group",
     title: "CRC Group",
     bhk: "2 & 3 BHK Apartments",
-    location: "Sector 12, Greater Noida West",
+    location: "Location :Sector 12, Greater Noida West",
     price: "Starting from Rs. XX Lakhs",
     rera: "UPRERAPRJYYYYYY",
     img: "/CRC Joyous3.webp",
@@ -752,7 +752,7 @@ otherFeatures: [
     slug: "crc-joyous",
     title: "CRC Joyous",
     bhk: "2 & 3 BHK Apartments",
-    location: "Sector 12, Greater Noida West",
+    location: "Location :Sector 12, Greater Noida West",
     price: "Starting from Rs. XX Lakhs",
     rera: "UPRERAPRJYYYYYY",
     img: "/Crc.jpg",
@@ -835,7 +835,7 @@ otherFeatures: [
     slug: "gaursons-nbcc",
     title: "Gaursons (NBCC)",
     bhk: "2 & 3 BHK Apartments",
-    location: "Techzone 4, Noida Extension",
+    location: "Location :Techzone 4, Noida Extension",
     price: "Starting from Rs. XX Lakhs",
     rera: "UPRERAPRJZZZZZZ",
     img: "Arihant 3.jpg",
@@ -922,7 +922,7 @@ otherFeatures: [
     slug: "gaursons",
     title: "VVIP Addresses",
     bhk: "2 & 3 BHK Apartments",
-    location: "Pari Chowk, Greater Noida",
+    location: "Location :Pari Chowk, Greater Noida",
     price: "Starting from Rs. XX Lakhs",
     rera: "UPRERAPRJZZZZZZ",
     img: "Gaurs 2.jpeg",
@@ -1000,7 +1000,7 @@ otherFeatures: [
     slug: "civitech-eldeco",
     title: "Eldeco Group",
     bhk: "2 & 3 BHK Apartments",
-    location: "Sector 150, Noida",
+    location: "Location :Sector 150, Noida",
     price: "Starting from Rs. XX Lakhs",
     rera: "UPRERAPRJYYYYYY",
     img: "/Eldeco Group4.jpg.jpeg",
@@ -1084,7 +1084,7 @@ otherFeatures: [
     slug: "civitech-nirala",
     title: "Nirala Estate",
     bhk: "2 & 3 BHK Apartments",
-    location: "Sector 78, Noida",
+    location: "Location :Sector 78, Noida",
     price: "Starting from Rs. XX Lakhs",
     rera: "UPRERAPRJYYYYYY",
     img: "/Nirala Estate 2.jpg.jpeg",
@@ -1171,7 +1171,7 @@ otherFeatures: [
     slug: "civitech-ska-orion",
     title: "SKA Orion",
     bhk: "2 & 3 BHK Apartments",
-    location: "Sector 143B, Noida",
+    location: "Location :Sector 143B, Noida",
     price: "Starting from Rs. XX Lakhs",
     rera: "UPRERAPRJ186008",
     img: "/SKA Orion4.webp",
@@ -1247,7 +1247,7 @@ otherFeatures: [
   {
   slug: "sobha",
   title: "Sobha",
-  location: "Sector 36, Greater Noida",
+  location: "Location :Sector 36, Greater Noida",
 
   gallery: [
     "/f13.jpg",
@@ -1278,7 +1278,6 @@ otherFeatures: [
     "4 BHK + Servant Room: 2800–3000 sq. ft."
   ],
 
-  //  IMPORTANT (ye tu missing bol raha tha pehle)
   masterPlan: [
     "European-themed residential community",
     "Approximately 4.5 acres of green/open spaces",
@@ -1328,7 +1327,7 @@ otherFeatures: [
 {
   slug: "vvip",
   title: "VVIP Addresses",
-  location: "Sector 12, Greater Noida West",
+  location: "Location :Sector 12, Greater Noida West",
 
   gallery: [
     "/vvip1.jpg",
@@ -1412,7 +1411,10 @@ otherFeatures: [
 {
   slug: "civitech-strings",
   title: "Civitech Strings",
-  location: "Sector 12, Greater Noida West",
+  bhk: "2 & 3 BHK Apartments",
+  location: "Location: Sector 12, Greater Noida West",
+  price: "Starting from Rs. 1.07 cr To 1.27 cr",
+    rera: "UPRERAPRJYYYYYY",
 
   gallery: [
     "/f32.jpg",
@@ -1494,7 +1496,7 @@ otherFeatures: [
 {
   slug: "fusion-brook",
   title: "fusion-brook",
-  location: "Sector 12, Greater Noida West",
+  location: "Location :Sector 12, Greater Noida West",
 
   gallery: [
     "/f26.jpg",
